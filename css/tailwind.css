@@ -1624,10 +1624,14 @@ body {
 }
 
 .a1O{
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: 1.75rem;
 }
 
+.a1Odate{
+  font-size: 1.25 rem;
+  line-height: 1.75rem;
+}
 .a2g{
   font-size: 0.75rem;
   line-height: 1rem;
