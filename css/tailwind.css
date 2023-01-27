@@ -198,6 +198,21 @@ textarea {
   /* 3 */
 }
 
+.event_register_button{
+  color: white;
+  font-size: 1.2rem;
+  background-color: rgb(20 20 20 / var(--tw-bg-opacity));
+  border-radius: 50px;
+  font-weight: 500;
+  padding-left: 20px;
+  padding-top: 7.5px;
+  padding-right: 20px;
+  padding-bottom: 7.5px;
+  transition-duration: 250ms;
+}
+.event_register_button:hover{
+  background-color: #3e7dff;
+}
 /*
 Remove the inheritance of text transform in Edge and Firefox.
 */
@@ -1221,7 +1236,9 @@ body {
 
 .a2l\[\#F3F4F4\]{
   --tw-border-opacity: 1;
-  border-color: rgb(243 244 244 / var(--tw-border-opacity));
+  border-bottom: 3px solid ;
+  border-top: 3px solid;
+  border-color: rgb(233 234 234 / var(--tw-border-opacity));
 }
 
 .a1I{
@@ -2049,7 +2066,9 @@ input#checkboxLabel:checked ~ .box span{
 
 .a0 .dark\:a2l\[\#2D2C4A\]{
   --tw-border-opacity: 1;
-  border-color: rgb(45 44 74 / var(--tw-border-opacity));
+  border-bottom: 2.25px solid ;
+  border-top: 2.25px solid;
+  border-color: rgb(20 20 20 / var(--tw-border-opacity));
 }
 
 .a0 .dark\:a27{
@@ -2071,12 +2090,12 @@ input#checkboxLabel:checked ~ .box span{
 
 .a0 .dark\:a2{
   --tw-bg-opacity: 1;
-  background-color: rgb(40 40 40 / var(--tw-bg-opacity));
+  background-color: rgb(30 30 30 / var(--tw-bg-opacity));
 }
 
 .a0 .dark\:a3{
   --tw-bg-opacity: 1;
-  background-color: rgb(27.5 27.5 27.5 /  var(--tw-bg-opacity));
+  background-color: rgb(22 22 22 /  var(--tw-bg-opacity));
 }
 
 .a0 .dark\:a7{
@@ -2090,7 +2109,7 @@ input#checkboxLabel:checked ~ .box span{
 
 .a0 .dark\:a1w\[\#1E2763\]{
   --tw-bg-opacity: 1;
-  background-color: rgb(21 21 21 / var(--tw-bg-opacity));
+  background-color: rgb(15 15 15 / var(--tw-bg-opacity));
 }
 
 .a0 .dark\:a1A{
@@ -2105,7 +2124,7 @@ input#checkboxLabel:checked ~ .box span{
 
 .a0 .dark\:a1w\[\#14102C\]{
   --tw-bg-opacity: 1;
-  background-color: rgb(27.5 27.5 27.5 / var(--tw-bg-opacity));
+  background-color: rgb(22 22 22 / var(--tw-bg-opacity));
 }
 
 .a0 .dark\:a1w\[\#2D2C4A\]{
@@ -2129,7 +2148,7 @@ input#checkboxLabel:checked ~ .box span{
 }
 
 .a0 .dark\:a4{
-  --tw-bg-opacity: 0.875;
+  --tw-bg-opacity: 0.95;
 }
 
 .a0 .dark\:a25{
