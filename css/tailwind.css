@@ -43,7 +43,6 @@ html {
   /* 3 */
   -o-tab-size: 4;
      tab-size: 4;
-  /* 3 */
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
 }
@@ -199,6 +198,21 @@ textarea {
   /* 3 */
 }
 
+.event_register_button{
+  color: white;
+  font-size: 1.2rem;
+  background-color: rgb(20 20 20 / var(--tw-bg-opacity));
+  border-radius: 50px;
+  font-weight: 500;
+  padding-left: 20px;
+  padding-top: 7.5px;
+  padding-right: 20px;
+  padding-bottom: 7.5px;
+  transition-duration: 250ms;
+}
+.event_register_button:hover{
+  background-color: #3e7dff;
+}
 /*
 Remove the inheritance of text transform in Edge and Firefox.
 */
@@ -555,6 +569,9 @@ body {
   position: relative;
 }
 
+.posRel{
+  position: relative;
+}
 .a8{
   top: 0px;
 }
@@ -1219,7 +1236,9 @@ body {
 
 .a2l\[\#F3F4F4\]{
   --tw-border-opacity: 1;
-  border-color: rgb(243 244 244 / var(--tw-border-opacity));
+  border-bottom: 3px solid ;
+  border-top: 3px solid;
+  border-color: rgb(233 234 234 / var(--tw-border-opacity));
 }
 
 .a1I{
@@ -1303,6 +1322,11 @@ body {
   background-color: rgb(35 71 185 / var(--tw-bg-opacity));
 }
 
+.a1w\[\#3363FF\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 99 255 / var(--tw-bg-opacity));
+}
+
 .a1w\[\#8BA6FF\]{
   --tw-bg-opacity: 1;
   background-color: rgb(139 166 255 / var(--tw-bg-opacity));
@@ -1311,6 +1335,37 @@ body {
 .a1w\[\#8696CA\]{
   --tw-bg-opacity: 1;
   background-color: rgb(134 150 202 / var(--tw-bg-opacity));
+}
+
+
+.a1w\[\#8093F1\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(128 147 241 / var(--tw-bg-opacity));
+}
+
+.a1w\[\#2589BD\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 137 189 / var(--tw-bg-opacity));
+}
+
+.a1w\[\#3E92EC\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(62 146 236 / var(--tw-bg-opacity));
+}
+
+.a1w\[\#2B9AA3\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 154 163 / var(--tw-bg-opacity));
+}
+
+.a1w\[\#99E6FF\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 230 255 / var(--tw-bg-opacity));
+}
+
+.a1w\[\#907ADD\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(144 122 221 / var(--tw-bg-opacity));
 }
 
 .a1w\[\#2D2947\]{
@@ -1624,10 +1679,14 @@ body {
 }
 
 .a1O{
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: 1.75rem;
 }
 
+.a1Odate{
+  font-size: 1.25 rem;
+  line-height: 1.75rem;
+}
 .a2g{
   font-size: 0.75rem;
   line-height: 1rem;
@@ -1983,7 +2042,6 @@ input#checkboxLabel:checked ~ .box span{
 .aZ:hover .group-hover\:a1d{
   opacity: 1;
 }
-
 .a0 .dark\:an{
   display: block;
 }
@@ -2008,7 +2066,9 @@ input#checkboxLabel:checked ~ .box span{
 
 .a0 .dark\:a2l\[\#2D2C4A\]{
   --tw-border-opacity: 1;
-  border-color: rgb(45 44 74 / var(--tw-border-opacity));
+  border-bottom: 2.25px solid ;
+  border-top: 2.25px solid;
+  border-color: rgb(20 20 20 / var(--tw-border-opacity));
 }
 
 .a0 .dark\:a27{
@@ -2030,12 +2090,12 @@ input#checkboxLabel:checked ~ .box span{
 
 .a0 .dark\:a2{
   --tw-bg-opacity: 1;
-  background-color: rgb(8 3 33 / var(--tw-bg-opacity));
+  background-color: rgb(30 30 30 / var(--tw-bg-opacity));
 }
 
 .a0 .dark\:a3{
   --tw-bg-opacity: 1;
-  background-color: rgb(19 27 77 / var(--tw-bg-opacity));
+  background-color: rgb(22 22 22 /  var(--tw-bg-opacity));
 }
 
 .a0 .dark\:a7{
@@ -2049,7 +2109,7 @@ input#checkboxLabel:checked ~ .box span{
 
 .a0 .dark\:a1w\[\#1E2763\]{
   --tw-bg-opacity: 1;
-  background-color: rgb(30 39 99 / var(--tw-bg-opacity));
+  background-color: rgb(15 15 15 / var(--tw-bg-opacity));
 }
 
 .a0 .dark\:a1A{
@@ -2064,7 +2124,7 @@ input#checkboxLabel:checked ~ .box span{
 
 .a0 .dark\:a1w\[\#14102C\]{
   --tw-bg-opacity: 1;
-  background-color: rgb(20 16 44 / var(--tw-bg-opacity));
+  background-color: rgb(22 22 22 / var(--tw-bg-opacity));
 }
 
 .a0 .dark\:a1w\[\#2D2C4A\]{
@@ -2088,7 +2148,7 @@ input#checkboxLabel:checked ~ .box span{
 }
 
 .a0 .dark\:a4{
-  --tw-bg-opacity: 0.8;
+  --tw-bg-opacity: 0.95;
 }
 
 .a0 .dark\:a25{
