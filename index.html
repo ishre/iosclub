@@ -978,7 +978,7 @@
 							<h3 class="a2s aO aP a1k dark:aT">Vithal Dubey</h3>
 							<p class="a2d a1j a1R aQ dark:aS">Secretary</p>
 							<div class="a1N aa ac a1t a4e">
-								<a href="javascript:void(0)" target="_blank"
+								<a href="https://www.instagram.com/vitthal_069/" target="_blank"
 									class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" name="social-link"
 									aria-label="social-link">
 									<svg class="a1B" width="20" height="20" viewBox="0 0 30 30">
@@ -987,7 +987,7 @@
 										</path>
 									</svg>
 								</a>
-								<a href="https://www.linkedin.com/in/vitthal-dubey(0)" target="_blank"
+								<a href="https://www.linkedin.com/in/vitthal-dubey/" target="_blank"
 									class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" name="social-link"
 									aria-label="social-link">
 									<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
@@ -1039,7 +1039,7 @@
 							<p class="a2d a1j a1R aQ dark:aS">Manager</p>
 
 							<div class="a1N aa ac a1t a4e">
-								<a href="https://www.instagram.com/_alpesh_garg" target="_blank"
+								<a href="https://www.instagram.com/_alpesh_garg_/" target="_blank"
 									class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" name="social-link"
 									aria-label="social-link">
 									<svg class="a1B" width="20" height="20" viewBox="0 0 30 30">
@@ -1889,7 +1889,7 @@
 						<div class="ab ak sm:a1M/2">
 							<div class="wow fadeInUp a4w aH[250px]" data-wow-delay="0s">
 								<h3 class="a1N aO aP a2u dark:aT">Phone Number</h3>
-								<p class="a1F a1R a4u aQ dark:aS"><a href="tel:8949598380">+91 89495 98380</a><br><a
+								<p class="a1F a1R a4u aQ dark:aS"><a href="tel:8949598320">+91 89495 98320</a><br><a
 										href="tel:9455594028">+91 94555 94028</a></p>
 							</div>
 						</div>
@@ -1943,37 +1943,68 @@
 				</div>
 				<div class="ab ak lg:a4x/12">
 					<div class="sm:a4y wow fadeInUp a1X a1 a3O a1E dark:a3" data-wow-delay="0s">
-						<h3 class="a2n a2B a1P a2u dark:aT sm:a2Q[34px] lg:a2B xl:a2Q[34px]">
+						<h3 class="a2n a2B a1P a2u dark:aT sm:a2Q[34px] lg:a2B xl:a2Q[34px]" id = "FORMTITLE" style="display: flex;">
 							Send us a Message
 						</h3>
-						<form>
+						<form name="submit-to-google-sheet" action="javascript:void(0)" id="CONTACTFORM">
 							<div class="a2K">
 								<label for="name" class="a2s an a1j a1R a2u dark:aT">
 									Full Name*
 								</label>
-								<input type="text" id="name" placeholder="Enter your full name"
-									class="ab a1X a1C a2l[#E9E9E9] a4z a22 a23 a1F a1R aS a24 focus:a1H dark:a4A dark:a1 dark:a4B" />
+								<input type="text" name="name" placeholder="Enter your full name"
+									class="ab a1X a1C a2l[#E9E9E9] a4z a22 a23 a1F a1R aS a24 focus:a1H dark:a4A dark:a1 dark:a4B" required/>
 							</div>
 							<div class="a2K">
 								<label for="email" class="a2s an a1j a1R a2u dark:aT">
 									Email Address*
 								</label>
-								<input type="email" id="email" placeholder="Enter your email address"
-									class="ab a1X a1C a2l[#E9E9E9] a4z a22 a23 a1F a1R aS a24 focus:a1H dark:a4A dark:a1 dark:a4B" />
+								<input type="email" name="email" placeholder="Enter your email address"
+									class="ab a1X a1C a2l[#E9E9E9] a4z a22 a23 a1F a1R aS a24 focus:a1H dark:a4A dark:a1 dark:a4B" required/>
 							</div>
 							<div class="a2K">
 								<label for="message" class="a2s an a1j a1R a2u dark:aT">
 									Message*
 								</label>
-								<textarea rows="6" id="message" placeholder="Type your message"
-									class="ab a1X a1C a2l[#E9E9E9] a4z a22 a23 a1F a1R aS a24 focus:a1H dark:a4A dark:a1 dark:a4B"></textarea>
+								<textarea rows="6" name="message" placeholder="Type your message"
+									class="ab a1X a1C a2l[#E9E9E9] a4z a22 a23 a1F a1R aS a24 focus:a1H dark:a4A dark:a1 dark:a4B" required></textarea>
 							</div>
 							<div>
-								<button class="ab a1u a1A a4C a2G a1F aP aT hover:a2X dark:a1 dark:a1k dark:hover:a2X">
+								<button id = "SubmitContactButton" onclick="validateForm()" class="ab a1u a1A a4C a2G a1F aP aT hover:a2X dark:a1 dark:a1k dark:hover:a2X">
 									Send Message
 								</button>
 							</div>
 						</form>
+						<script>
+							function validateForm(){
+								var Name = document.forms['submit-to-google-sheet']["name"].value;
+								var Email = document.forms['submit-to-google-sheet']["email"].value;
+								var regexp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+              					var Message = document.forms['submit-to-google-sheet']["message"].value;
+								if(!(Name == '' && Message == "") && regexp.test(String(Email).toLowerCase()) ){
+									SubmitContactForm();
+									
+								}
+							}
+
+							const scriptURL = 'https://script.google.com/macros/s/AKfycbzlVwvbwgLiw--NNq8qJdisuURiZSyLOw_eUhwCiwk66aj4iIw7X_OryPjg-_xYpP8iNg/exec';
+							const form = document.forms['submit-to-google-sheet'];
+							function SubmitContactForm() {
+								var data = new FormData(form);
+							  fetch(scriptURL, { method: 'POST', body: data})
+								.then(response => CloseContactForm())
+								.catch(error => alert("There Was Some Error Submitting the Form"))
+
+							}
+							function CloseContactForm(){
+								var FORM = document.getElementById("CONTACTFORM");
+								FORM.remove();
+								var Heading = document.getElementById("FORMTITLE");;
+								Heading.innerHTML = "Thanks For Submitting";
+								Heading.style.justifyContent="center";
+								
+
+							}
+						  </script>
 					</div>
 				</div>
 			</div>
