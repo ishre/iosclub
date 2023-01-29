@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="css/apexcharts.css" />
 	<link rel="stylesheet" href="css/tailwind.css" />
 
-	<script defer src="/js/alpine.min.js"></script>
+	<script defer src="alpine.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script>
 		// ===== wow js
@@ -24,7 +24,7 @@
 	</script>
 </head>
 
-<body onload="showPopUp()" x-data="
+<body x-data="
       {
         scrolledFromTop: false
       }
@@ -175,7 +175,7 @@
 		</div>
 	</header>
 	<section>
-		<!-- POPUP --> 
+		<!-- POPUP -->
 
 		<script>
 			function showPopUp() {
@@ -186,7 +186,7 @@
 
 				document.getElementById("POPUP").style.display = "none";
 			}
-			
+
 			onload(showPopUp());
 		</script>
 
@@ -204,11 +204,12 @@
 				/* Full width */
 				height: 100%;
 				/* Full height */
-				background-color: rgba(30, 30, 30, 0.9);
+				background-color: rgba(0, 0, 0, 0.85);
 				align-items: center;
 				animation-duration: 250ms;
 			}
-			#POPUP img{
+
+			#POPUP img {
 				z-index: 10000;
 				display: flex;
 				height: 85%;
@@ -216,663 +217,31 @@
 				top: 50%;
 				justify-content: center;
 				justify-self: center;
-				width : auto;
+				width: auto;
 			}
-			#POPUP img .close{
+
+			#POPUP img .close {
 				height: 10px;
 				width: 10px;
 			}
 		</style>
 		<centre>
-			<div id="POPUP" style="display: flex;align-content: center;justify-content: center;align-items: center;justify-items: center;flex-direction: column;flex-wrap: nowrap;">
-				<img src="./images/logo/popup.png">
+			<div id="POPUP"
+				style="display: flex;align-content: center;justify-content: center;align-items: center;justify-items: center;flex-direction: column;flex-wrap: nowrap;">
+				<img src="./images/logo/popup.webp">
 				<div>
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLSc0GXzQNSImCr3wB7kzbht0o_r3iRTDzA7_DfcoO_nC_gmkRQ/viewform" target="_blank">
-					<button class="event_register_button" onclick="ClosePopUp()">Register Now</button>
-				</a>
-				&nbsp&nbsp
-				<button class="event_register_button" onclick="ClosePopUp()">Close</button></a></div>
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLSc0GXzQNSImCr3wB7kzbht0o_r3iRTDzA7_DfcoO_nC_gmkRQ/viewform"
+						target="_blank">
+						<button class="event_register_button" onclick="ClosePopUp()">Register Now</button>
+					</a>
+					&nbsp&nbsp
+					<button class="event_register_button" onclick="ClosePopUp()">Close</button></a></div>
 			</div>
 		</centre>
 		<!-- -->
 	</section>
 	<section id="home" class="af a2E a3p a3q">
-		
-		<!--          ANIMATION          -->
-		<!--  
-	  
-<input name="theme" type="radio" id="deep-purple" checked="checked"/>
-<input name="theme" type="radio" id="gold"/>
-<input name="theme" type="radio" id="space-black"/>
-<input name="theme" type="radio" id="silver"/>
-<div class="phone">
-  <div class="buttons">
-    <div class="left">
-      <div class="button"></div>
-      <div class="button"></div>
-      <div class="button"></div>
-    </div>
-    <div class="right">
-      <div class="button"></div>
-    </div>
-  </div>
-  <div class="camera"></div>
-  <div class="screen-container">
-    <div class="bg">
-      <div class="deep-purple">
-        <div class="section">
-          <div class="glow"></div>
-        </div>
-        <div class="section">
-          <div class="glow"></div>
-        </div>
-      </div>
-      <div class="gold">
-        <div class="section">
-          <div class="glow"></div>
-        </div>
-        <div class="section">
-          <div class="glow"></div>
-        </div>
-      </div>
-      <div class="space-black">
-        <div class="section">
-          <div class="glow"></div>
-        </div>
-        <div class="section">
-          <div class="glow"></div>
-        </div>
-      </div>
-      <div class="silver">
-        <div class="section">
-          <div class="glow"></div>
-        </div>
-        <div class="section">
-          <div class="glow"></div>
-        </div>
-      </div>
-    </div>
-    <div class="notch-container" tabIndex="0">
-      <div class="notch">
-        <div class="content">
-          <div class="left">
-            <div class="tile"></div>
-            <div class="text"></div>
-          </div>
-          <div class="right"></div>
-        </div>
-      </div></a>
-    </div>
-    <div class="notch-blur"></div>
-
-  </div>
-</div>
-
-
-<style>
-	:root {
-  --size: max(5px, 1vmin);
-  --height: 40rem;
-  --pad: .625em;
-  --border-radius: 3.3336em;
-  --gutter: calc(var(--pad) * 2);
-  --button-width: 0.33em;
-  --notch-height: 2.5em;
-  --notch-width: 33.3%;
-  --notch-radius: calc(var(--border-radius) - calc(var(--pad) * 2));
-  --notch-duration: 0.333s;
-  --ease: cubic-bezier(.666, 0, .4, 1);
-  --ease-spring: cubic-bezier(.666, 0, .4, 1.2);
-  --ease-out: cubic-bezier(.15,0,.333,1);
-  --border-width: 0.4em;
-  --deep-purple: 284;
-  --gold: 30;
-  --space-black: 215;
-  --silver: 254;
-  --c-h: var(--deep-purple);
-  --c-s: 100%;
-  --c-l: 50%;
-}
-
-@-webkit-keyframes appear {
-  to {
-    transform: scale3d(1, 1, 1);
-    opacity: 1;
-  }
-}
-
-@keyframes appear {
-  to {
-    transform: scale3d(1, 1, 1);
-    opacity: 1;
-  }
-}
-
-.phone {
-  position: relative;
-  z-index: 1;
-  aspect-ratio: 37/76;
-  background: black;
-  height: var(--height);
-  border-radius: var(--border-radius);
-  box-shadow: 0 0 0.1em 0.25em hsl(var(--c-h), 20%, 25%), 0 0 0 var(--border-width) hsl(var(--c-h), 30%, 85%);
-  box-sizing: border-box;
-  opacity: 0;
-  transform: scale3d(1.1, 1.1, 1);
-  -webkit-animation: appear 1s var(--ease-out) forwards;
-          animation: appear 1s var(--ease-out) forwards;
-  webkit-backface-visibility: hidden;
-}
-.phone:before {
-  content: "";
-  position: absolute;
-  top: var(--border-radius);
-  right: calc(var(--border-width) * -1);
-  bottom: var(--border-radius);
-  left: calc(var(--border-width) * -1);
-  border: 0.5em solid hsl(var(--c-h), 20%, 30%);
-  border-left-width: 0;
-  border-right-width: 0;
-}
-
-.buttons {
-  position: absolute;
-  inset: calc(var(--border-width) * -1);
-  pointer-events: none;
-}
-.buttons .left,
-.buttons .right {
-  position: absolute;
-  width: var(--button-width);
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 1.5em;
-}
-.buttons .left {
-  right: 100%;
-  top: calc(var(--border-radius) * 2);
-}
-.buttons .left .button:nth-child(1) {
-  height: 3em;
-  margin-bottom: 0.5em;
-}
-.buttons .right {
-  left: 100%;
-  transform: scale3d(-1, 1, 1);
-  top: calc(var(--border-radius) * 3);
-}
-.buttons .right .button {
-  height: 9.5em;
-}
-.buttons .button {
-  background: hsl(var(--c-h), 20%, 95%);
-  height: 6em;
-  box-shadow: inset -0.15em 0 0.1em black, inset 0 0 0.1em hsl(var(--c-h), 30%, 90%), inset 0 0.2em 0.1em hsl(var(--c-h), 30%, 90%), inset 0 -0.2em 0.1em hsl(var(--c-h), 30%, 90%), inset -0.1em 0.333em 0.1em rgba(0, 0, 0, 0.5), inset -0.1em -0.333em 0.1em rgba(0, 0, 0, 0.5);
-  border-top-left-radius: 0.2em;
-  border-bottom-left-radius: 0.2em;
-}
-
-.screen-container {
-  position: absolute;
-  inset: 0;
-  border-radius: var(--border-radius);
-  border: var(--pad) solid black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: calc(var(--pad) * 2);
-}
-.screen-container:before {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  background: white;
-  width: 36.6%;
-  bottom: calc(var(--pad) * 0.75);
-  height: calc(var(--pad) * 0.5);
-  border-radius: calc(var(--pad) * 0.25);
-  filter: drop-shadow(0 0.1em 0.25em rgba(0, 0, 0, 0.1));
-}
-
-.bg {
-  position: absolute;
-  inset: 0;
-  background: black;
-  border-radius: calc(var(--border-radius) - var(--pad));
-  overflow: hidden;
-}
-.bg > * {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  opacity: 0;
-  transition: opacity 1s var(--ease-out) 0.5s;
-}
-.bg .section {
-  --g-h: var(--c-h);
-  --g-s: var(--c-s);
-  --g-l: var(--c-l);
-  flex-grow: 1;
-  position: relative;
-  overflow: hidden;
-  border-radius: calc(var(--border-radius) - var(--pad));
-  border-bottom-left-radius: 20em;
-  border-bottom-right-radius: 20em;
-}
-.bg .section:before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: radial-gradient(85% 125% at 50% 140%, black 66.6%, transparent), radial-gradient(120% 120% at 50% 145%, hsl(calc(var(--g-h) - 45), 100%, 50%) 50%, transparent), radial-gradient(150% 100% at 50% 80%, transparent 35%, hsl(calc(var(--g-h) + 50), 100%, 99%));
-  background-color: hsl(var(--g-h), var(--g-s), var(--g-l));
-  transform: scale3d(1.1, 1.25, 1);
-  transform-origin: bottom;
-  transition: transform 1s var(--ease-out) 0.5s;
-}
-.bg .section:after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border: var(--border-width) solid rgba(255, 255, 255, 0.8);
-  border-radius: inherit;
-  filter: blur(0.05em);
-  -webkit-mask-image: radial-gradient(100% 100% at 50% 70%, black 30%, transparent 50%);
-          mask-image: radial-gradient(100% 100% at 50% 70%, black 30%, transparent 50%);
-}
-.bg .section .glow {
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  mix-blend-mode: overlay;
-  z-index: 1;
-  background: radial-gradient(80% 150% at 50% 100%, hsl(var(--g-h), 100%, var(--g-l)), transparent 70%);
-}
-.bg .section:last-of-type {
-  --g-h: calc(var(--c-h) - var(--g-hue-adjust, 0));
-  --g-s: calc(var(--c-s) - 25%);
-  --g-l: calc(var(--c-l) + 20%);
-  transform: scale3d(1, -1, 1) translateZ(1px);
-}
-.bg .section:last-of-type:before {
-  background: radial-gradient(85% 125% at 50% 140%, black 66.6%, transparent), radial-gradient(120% 120% at 50% 145%, hsl(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust, 0))), 100%, 50%) 50%, transparent), radial-gradient(150% 100% at 50% 95%, transparent 15%, hsl(calc(var(--g-h) + 5), 100%, var(--g-lightness, 100%)));
-  background-color: hsl(var(--g-h), var(--g-s), var(--g-l));
-}
-
-.notch-container {
-  position: absolute;
-  z-index: 3;
-  top: var(--pad);
-  right: var(--pad);
-  left: var(--pad);
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  max-height: calc(var(--notch-radius) * 2);
-  pointer-events: none;
-  outline: none;
-  transition: var(--notch-duration) var(--ease);
-  transition-property: max-height, max-width, filter, transform;
-  will-change: max-width, max-height, filter;
-}
-.notch-container:hover, .notch-container:focus-within {
-  --shadow-opacity: 0.5;
-  transition-timing-function: var(--ease-spring);
-}
-.notch-container:hover .content, .notch-container:focus-within .content {
-  --content-padding: 2em;
-}
-.notch-container:hover .content .text, .notch-container:focus-within .content .text {
-  opacity: 1;
-}
-.notch-container:hover .notch, .notch-container:focus-within .notch {
-  max-width: 100%;
-  max-height: 100%;
-  pointer-events: all;
-  transform: scale3d(1, 1, 1);
-}
-.notch-container:hover ~ .notch-blur, .notch-container:focus-within ~ .notch-blur {
-  opacity: 1;
-  max-height: calc(var(--notch-radius) * 2.75 + var(--pad));
-}
-/*
-.notch-container:focus-within {
-  max-height: calc(var(--notch-radius) * 3);
-  --bar-height: 1em;
-  --bar-opacity: 1;
-}
-.notch-container:focus-within .left,
-.notch-container:focus-within .right {
-  max-height: calc(100% - var(--bar-height, 0%) - var(--content-gap));
-}
-.notch-container:focus-within ~ .notch-blur {
-  max-height: calc(var(--notch-radius) * 5);
-  opacity: 1;
-}*/
-
-.notch-blur {
-  position: absolute;
-  z-index: 2;
-  top: calc(var(--pad) - 3px);
-  right: calc(var(--pad) - 3px);
-  left: calc(var(--pad) - 3px);
-  height: 100%;
-  max-height: calc(var(--notch-radius) * 1.5);
-  -webkit-backdrop-filter: blur(0.2em);
-          backdrop-filter: blur(0.2em);
-  filter: blur(0.1em);
-  -webkit-mask-image: linear-gradient(to bottom, black calc(100% - var(--notch-radius)), transparent);
-          mask-image: linear-gradient(to bottom, black calc(100% - var(--notch-radius)), transparent);
-  opacity: 0;
-  transition: var(--notch-duration) ease-in-out;
-  border-radius: calc(var(--border-radius) - var(--pad));
-  transition: var(--notch-duration) var(--ease);
-  transition-property: max-height, max-width, filter, transform;
-  will-change: max-width, max-height, filter;
-}
-
-.notch {
-  position: relative;
-  background: black;
-  border-radius: var(--notch-radius);
-  pointer-events: all;
-  overflow: hidden;
-  color: white;
-  display: flex;
-  cursor: pointer;
-  width: 100%;
-  transition: inherit;
-  transition-property: inherit;
-  will-change: inherit;
-  filter: drop-shadow(0 1em 2em hsla(0 0% 0%/var(--shadow-opacity, 0)));
-  transform: scale3d(0.375, 0.4, 1);
-  transform-origin: top;
-}
-
-.content {
-  --content-padding: 1.75em;
-  --duration-height: 0.5em;
-  --content-gap: 1em;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: stretch;
-  padding: var(--content-padding);
-  gap: var(--content-gap);
-  font-size:100%;
-  transition-property: padding;
-  will-change: padding;
-}
-.content .left,
-.content .right {
-  height: 100%;
-  max-height: calc(100% - var(--bar-height, 0%));
-  display: flex;
-  align-items: center;
-  gap: 1em;
-}
-.content, .content .left, .content .right, .content .bar, .content .text {
-  transition: var(--notch-duration) var(--ease-out);
-}
-.content .left, .content .right, .content .bar {
-  transition-property: max-height, opacity;
-  will-change: max-height;
-}
-.content .left {
-  flex-grow: 2;
-}
-.content .text {
-  display: flex;
-  flex-direction: column;
-  gap: 0.333em;
-  transition-property: opacity;
-  opacity: var(--bar-opacity, 0);
-}
-.content .text:before {
-  content: "GAMEFLIX";
-  order: 1;
-  text-transform: uppercase;
-}
-.content .text:after {
-  order: 2;
-  content: "adVITya";
-  
-  opacity: 0.5;
-}
-.content .right {
-  flex-grow: 1;
-}
-.content .tile {
-  background: #1a1ab3;
-  height: 75%;
-  aspect-ratio: 1;
-  border-radius: 33.3%;
-  position: relative;
-}
-.content .tile:before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  background: radial-gradient(50% 50% at 55% 40%, #131386, #cd1385 75%, transparent) center/133.3% 133.3%;
-  background-color: yellow;
-  filter: blur(0.05em);
-}
-.content .bar {
-  display: absolute;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  flex-basis: 100%;
-  height: 100%;
-  max-height: 20%;
-  color: #fff;
-  opacity: var(--bar-opacity, 0);
-}
-
-.camera {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: var(--notch-height);
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  pointer-events: none;
-  position: absolute;
-  z-index: 4;
-  top: 2%;
-  right: calc(50% - calc(var(--notch-width) * 0.5));
-  margin-right: calc(var(--pad) * 0.333);
-}
-.camera:before {
-  content: "";
-  height: 33.3%;
-  aspect-ratio: 1;
-  border-radius: inherit;
-  box-shadow: inset 0 0 0.25em #4c4da3;
-  background: radial-gradient(#6667ac, transparent 50%) no-repeat 33.3% 10%/75% 50%, radial-gradient(#454680, transparent 50%) no-repeat 60% 85%/50% 50%;
-  background-color: #080928;
-}
-
-
-.pallette {
-  display: flex;
-  gap: 2em;
-  margin-bottom: -0.25em;
-}
-
-input[type=radio] {
-  display: none;
-}
-
-.swatch {
-  --swatch-size: 5em;
-  background: white;
-  width: var(--swatch-size);
-  height: var(--swatch-size);
-  border-radius: 50%;
-  position: relative;
-  cursor: pointer;
-  border: var(--border-width) solid black;
-  box-sizing: border-box;
-  transition: 0.333s var(--ease-out);
-  transition-property: border-color, transform;
-  background: radial-gradient(100% 100% at 50% 30%, var(--swatch-s1), var(--swatch-s2));
-  opacity: 0;
-  transform: translate3d(0, 20%, 0) scale3d(0.75, 0.75, 1);
-  -webkit-animation: appear 0.333s var(--ease-out) forwards 0.75s;
-          animation: appear 0.333s var(--ease-out) forwards 0.75s;
-}
-.swatch:nth-child(1) {
-  transform-origin: 80% 200%;
-}
-.swatch:nth-child(2) {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-  transform-origin: 60% 200%;
-}
-.swatch:nth-child(3) {
-  -webkit-animation-delay: 0.85s;
-          animation-delay: 0.85s;
-  transform-origin: 40% 200%;
-}
-.swatch:nth-child(4) {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-  transform-origin: 20% 200%;
-}
-.swatch:before {
-  content: "";
-  position: absolute;
-  inset: -1px;
-  border-radius: inherit;
-  border: var(--border-width) solid black;
-  background-image: radial-gradient(400% 300% at 50% 225%, transparent 20%, white);
-}
-.swatch[for=deep-purple] {
-  --swatch-s1: hsl(var(--deep-purple), 100%, 50%);
-  --swatch-s2: hsl(calc(var(--deep-purple) - 60), 100%, 20%);
-}
-.swatch[for=deep-purple]:before {
-  opacity: 0.5;
-}
-.swatch[for=gold] {
-  --swatch-s1: hsl(var(--gold), 100%, 50%);
-  --swatch-s2: hsl(var(--gold), 100%, 50%);
-}
-.swatch[for=space-black] {
-  --swatch-s1: hsl(var(--space-black), 50%, 20%);
-  --swatch-s2: hsl(var(--space-black), 50%, 10%);
-}
-.swatch[for=space-black]:before {
-  opacity: 0.5;
-}
-.swatch[for=silver] {
-  --swatch-s1: hsl(var(--silver), 50%, 80%);
-  --swatch-s2: hsl(var(--silver), 50%, 10%);
-}
-.swatch[for=silver]:before {
-  opacity: 0.75;
-}
-
-.deep-purple {
-  --c-h: var(--deep-purple);
-  --g-hue-adjust: 60;
-}
-
-.gold {
-  --c-h: var(--gold);
-  --g-hue-adjust-2: -180;
-}
-
-.space-black {
-  --c-h: var(--space-black);
-  --g-hue-adjust: 190;
-  --g-hue-adjust-2: 145;
-  --g-lightness: 95%;
-}
-
-.silver {
-  --c-h: var(--silver);
-  --c-s: 10%;
-  --g-hue-adjust: 30;
-  --g-lightness: 95%;
-}
-.silver .glow {
-  opacity: 0.25;
-}
-
-#deep-purple:checked ~ .phone .bg .deep-purple {
-  opacity: 1;
-  z-index: 1;
-  transition-delay: 0s;
-}
-#deep-purple:checked ~ .phone .bg .deep-purple .section:before {
-  transition-delay: 0s;
-  animation: test 1s infinite alternate-reverse;
-}
-
-#deep-purple:checked ~ .pallette label[for=deep-purple] {
-  border-color: hsl(var(--deep-purple), 50%, 75%);
-}
-
-#gold:checked ~ .phone .bg .gold {
-  opacity: 1;
-  z-index: 1;
-  transition-delay: 0s;
-}
-#gold:checked ~ .phone .bg .gold .section:before {
-  transition-delay: 0s;
-  transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
-  animation: test 1s infinite alternate-reverse;
-}
-#gold:checked ~ .pallette label[for=gold] {
-  border-color: hsl(var(--gold), 50%, 75%);
-}
-
-#space-black:checked ~ .phone .bg .space-black {
-  opacity: 1;
-  z-index: 1;
-  transition-delay: 0s;
-}
-#space-black:checked ~ .phone .bg .space-black .section:before {
-  transition-delay: 0s;
-  transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
-  animation: test 1s infinite alternate-reverse;
-}
-#space-black:checked ~ .pallette label[for=space-black] {
-  border-color: hsl(var(--space-black), 50%, 75%);
-}
-
-#silver:checked ~ .phone .bg .silver {
-  opacity: 1;
-  z-index: 1;
-  transition-delay: 0s;
-}
-#silver:checked ~ .phone .bg .silver .section:before {
-  transition-delay: 0s;
-  transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
-  animation: test 1s infinite alternate-reverse;
-}
-#silver:checked ~ .pallette label[for=silver] {
-  border-color: hsl(var(--silver), 50%, 75%);
-}
-
-@keyframes test {
-    from{
-        transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
-    } 
-    to{
-        transform: scale3d(2, 2, 2) translate3d(50px, 50px, 5px);
-    }
-}
-</style>
--->
-		<!--        ANIMATION END        -->
-		 <div class="ae">
+		<div class="ae">
 			<div class="ag aa a1L">
 				<div class="ab ak">
 					<div class="a3r aH[720px] a2G">
@@ -1131,7 +500,13 @@ input[type=radio] {
 						rgba(62, 125, 255, 0) 100%
 					);
 				"
-			></div>-->
+			></div>--></div></div></div></div><div class="aq a8 a1a a2Z a2w ab a3D" style="
+					background-image: linear-gradient(
+						180deg,
+						#3e7dff 0%,
+						rgba(62, 125, 255, 0) 100%
+					);
+				"></div></section>
 						<img src="images/shapes/hero-shape-1.svg" alt="" class="aq a1a a8 a2Z" />
 						<img src="images/shapes/hero-shape-2.svg" alt="" class="aq a19 a8 a2Z" />
 	</section>
@@ -1145,33 +520,33 @@ input[type=radio] {
 					<div class="ak">
 						<a href="https://codingninjas.com" target="_blank" rel="nofollow noopenner"
 							class="a1W aa aH[170px] a1t a3G a3H hover:a1d hover:a3I dark:hover:a1d">
-							<img src="images/brands/codingninjasdark.png" alt="Coding Ninjas"
+							<img src="images/brands/codingninjasdark.webp" alt="Coding Ninjas"
 								class="a3r ao a32 a2G dark:an " />
-							<img src="images/brands/codingninjas.png" alt="Coding Ninjas"
+							<img src="images/brands/codingninjas.webp" alt="Coding Ninjas"
 								class="a3r a32 a2G dark:ao " />
 						</a>
 					</div>
 					<div class="ak">
 						<a href="https://fueler.io" target="_blank" rel="nofollow noopenner"
 							class="a1W aa aH[170px] a1t a3G a3H hover:a1d hover:a3I dark:hover:a1d">
-							<img src="images/brands/fueler_logodark.png" alt="Fueler"
+							<img src="images/brands/fueler_logodark.webp" alt="Fueler"
 								class="a3r ao a32 a2G img dark:an" />
-							<img src="images/brands/fueler_logo.png" alt="Fueler" class="a3r a32 a2G dark:ao" />
+							<img src="images/brands/fueler_logo.webp" alt="Fueler" class="a3r a32 a2G dark:ao" />
 						</a>
 					</div>
 					<div class="ak">
 						<a href="https://Zeeve.io" target="_blank" rel="nofollow noopenner"
 							class="a1W aa aH[170px] a1t a3G a3H hover:a1d hover:a3I dark:hover:a1d">
-							<img src="images/brands/zeeve.png" alt="Zeeve" class="a3r ao a32 a2G dark:an" />
-							<img src="images/brands/zeevedark.png" alt="Zeeve" class="a3r a32 a2G dark:ao" />
+							<img src="images/brands/zeeve.webp" alt="Zeeve" class="a3r ao a32 a2G dark:an" />
+							<img src="images/brands/zeevedark.webp" alt="Zeeve" class="a3r a32 a2G dark:ao" />
 						</a>
 					</div>
 					<div class="ak">
 						<a href="https://sitecountry.com" target="_blank" rel="nofollow noopenner"
 							class="a1W aa aH[170px] a1t a3G a3H hover:a1d hover:a3I dark:hover:a1d">
-							<img src="images/brands/sitecountrydark.png" alt="SiteCountry"
+							<img src="images/brands/sitecountrydark.webp" alt="SiteCountry"
 								class="a3r ao a32 a2G dark:an" />
-							<img src="images/brands/sitecountry.png" alt="SiteCountry" class="a3r a32 a2G dark:ao" />
+							<img src="images/brands/sitecountry.webp" alt="SiteCountry" class="a3r a32 a2G dark:ao" />
 						</a>
 					</div>
 				</div>
@@ -1202,7 +577,7 @@ input[type=radio] {
 								Career<br>Building
 							</h3>
 							<p class="a1F a1R aQ dark:aS sm:aO lg:a1F xl:aO">
-								Focusing on career building and upscalling Skills of the Students and Giving their
+								Focusing on career building and upscaling Skills of the Students and Giving their
 								Resume a Boost.
 							</p>
 						</div>
@@ -1316,7 +691,8 @@ input[type=radio] {
 								<h3 class="a2d a1O a1P a1k dark:aT">GameFlix</h3>
 								<h3 class="a2d a1Odate a1P a1k dark:aT">9 Feb, 2023</h3>
 								<p class="a2K a1F a1R aQ dark:aS">
-									<strong> GameFlix</strong> is iOS Club’s flagship event at <strong>AdVITya</strong>.
+									<strong> GameFlix</strong> is iOS Club’s flagship event at
+									<strong>AdVITya</strong>.
 									A 6-hour long fun and challenging series of games that consists of the three
 									rounds:<br>
 									Round 1: Money Heist<br>
@@ -1359,7 +735,9 @@ input[type=radio] {
 								<span class="aq a4b as/2 ao a3e a3f at/2 az a1v dark:a3 md:an"></span>
 								<h3 class="a2d a1O a1P a1k dark:aT">Sampurna</h3>
 								<h3 class="a2d a1Odate a1P a1k dark:aT">Jan 31 - Feb 1, 2023</h3>
-								<p class="a2K a1F a1R aQ dark:aS">A 3-day Offline Business Hackathon Event - <strong>‘Sampurna’</strong>.<strong> Sampurna</strong> brings together more than 500 of the
+								<p class="a2K a1F a1R aQ dark:aS">A 3-day Offline Business Hackathon Event -
+									<strong>‘Sampurna’</strong>.<strong> Sampurna</strong> brings together more than
+									500 of the
 									brightest minds from various Domains to solve real-world business problems and
 									foster
 									a collaborative and innovative environment.
@@ -1416,13 +794,16 @@ input[type=radio] {
 								<span class="aq a44 as/2 ao a3e a3f at/2 az a1v dark:a3 md:an"></span>
 								<h3 class="a2d a1O a1P a1k dark:aT">Inaugural Ceremony</h3>
 								<h3 class="a2d a1Odate a1P a1k dark:aT">Nov 11, 2022</h3>
-								<p class="a2K a1F a1R aQ dark:aS">It was the first event organized by iOS Club at VIT
+								<p class="a2K a1F a1R aQ dark:aS">It was the first event organized by iOS Club at
+									VIT
 									Bhopal.
-									The event was graced by the honorary Chief Guest, Kashish Sharma, who is currently
+									The event was graced by the honorary Chief Guest, Kashish Sharma, who is
+									currently
 									working as an iOS intern at automobile giant -
 									Mercedes
 									Benz.
-									The ceremony was followed by <strong>HiJack-iT</strong>, a fun code-breaker competition
+									The ceremony was followed by <strong>HiJack-iT</strong>, a fun code-breaker
+									competition
 								</p>
 								<!--
 									<a href="" class="aV ac a1t a1u a1 a45 a46">
@@ -1489,13 +870,14 @@ input[type=radio] {
 				<div class="ab ak sm:a1M/2 lg:a1M/4">
 					<div class="aZ wow fadeInUp a1W au a4c a21 a1v a1f a2G a1G hover:a1H dark:a3" data-wow-delay="0s">
 						<div class="a2a a2c a1i">
-							<img src="images/ios pics/AB ROUF SIR.jpg" alt="team" class="a4d ab" />
+							<img src="images/ios pics/AB ROUF SIR.webp" alt="team" class="a4d ab" />
 						</div>
 						<div>
 							<h3 class="a2s aO aP a1k dark:aT">Dr. AB Rouf</h3>
 							<p class="a2d a1j a1R aQ dark:aS">Faculty Coordinator</p>
 							<div class="a1N aa ac a1t a4e">
-								<a href="https://www.linkedin.com/in/rouf-khan" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"target="_blank"
+								<a href="https://www.linkedin.com/in/rouf-khan"
+									class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" target="_blank"
 									name="social-link" aria-label="social-link">
 									<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
 										<path
@@ -1509,13 +891,14 @@ input[type=radio] {
 				<div class="ab ak sm:a1M/2 lg:a1M/4">
 					<div class="aZ wow fadeInUp a1W au a4c a21 a1v a1f a2G a1G hover:a1H dark:a3" data-wow-delay="0s">
 						<div class="a2a a2c a1i">
-							<img src="images/ios pics/E NIRMALA MA'AM.jpg" alt="team" class="a4d ab" />
+							<img src="images/ios pics/E NIRMALA MAAM.webp" alt="team" class="a4d ab" />
 						</div>
 						<div>
 							<h3 class="a2s aO aP a1k dark:aT">Dr. E Nirmala </h3>
 							<p class="a2d a1j a1R aQ dark:aS">Faculty Coordinator</p>
 							<div class="a1N aa ac a1t a4e">
-								<a href="https://www.linkedin.com/in/nirmala-e-198b2623b" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"target="_blank"
+								<a href="https://www.linkedin.com/in/nirmala-e-198b2623b"
+									class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" target="_blank"
 									name="social-link" aria-label="social-link">
 									<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
 										<path
@@ -1529,21 +912,23 @@ input[type=radio] {
 				<div class="ab ak sm:a1M/2 lg:a1M/4">
 					<div class="aZ wow fadeInUp a1W au a4c a21 a1v a1f a2G a1G hover:a1H dark:a3" data-wow-delay="0s">
 						<div class="a2a a2c a1i">
-							<img src="images/ios pics/SHARAD JHA.JPG" alt="team" class="a4d ab" />
+							<img src="images/ios pics/SHARAD.webp" alt="team" class="a4d ab" />
 						</div>
 						<div>
 							<h3 class="a2s aO aP a1k dark:aT">Sharad Jha</h3>
 							<p class="a2d a1j a1R aQ dark:aS">President</p>
 							<div class="a1N aa ac a1t a4e">
-								<a href="https://www.instagram.com/sharad_10.10" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"target="_blank"
+								<a href="https://www.instagram.com/sharad_10.10"
+									class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" target="_blank"
 									name="social-link" aria-label="social-link">
-									<svg class="a1B"
-width="20" height="20"
-viewBox="0 0 30 30">
-    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
-</svg>
+									<svg class="a1B" width="20" height="20" viewBox="0 0 30 30">
+										<path
+											d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
+										</path>
+									</svg>
 								</a>
-								<a href="https://www.linkedin.com/in/sharad-jha-4260a9218" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"target="_blank"
+								<a href="https://www.linkedin.com/in/sharad-jha-4260a9218"
+									class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" target="_blank"
 									name="social-link" aria-label="social-link">
 									<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
 										<path
@@ -1557,22 +942,24 @@ viewBox="0 0 30 30">
 				<div class="ab ak sm:a1M/2 lg:a1M/4">
 					<div class="aZ wow fadeInUp a1W au a4c a21 a1v a1f a2G a1G hover:a1H dark:a3" data-wow-delay="0s">
 						<div class="a2a a2c a1i">
-							<img src="images/ios pics/GAURI AGARWAL.JPG" alt="team" class="a4d ab" />
+							<img src="images/ios pics/GAURI.webp" alt="team" class="a4d ab" />
 						</div>
 						<div>
 							<h3 class="a2s aO aP a1k dark:aT">Gauri Agarwal</h3>
 							<p class="a2d a1j a1R aQ dark:aS">Vice-President</p>
 							<div class="a1N aa ac a1t a4e">
-								<a href="https://www.instagram.com/_._gauriagarwal" target="_blank" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"
-									name="social-link" aria-label="social-link">
-									<svg class="a1B"
-width="20" height="20"
-viewBox="0 0 30 30">
-    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
-</svg>
+								<a href="https://www.instagram.com/_._gauriagarwal" target="_blank"
+									class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" name="social-link"
+									aria-label="social-link">
+									<svg class="a1B" width="20" height="20" viewBox="0 0 30 30">
+										<path
+											d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
+										</path>
+									</svg>
 								</a>
-								<a href="https://www.linkedin.com/in/gauri-agarwal-software-developer" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"
-									name="social-link" aria-label="social-link" target="_blank">
+								<a href="https://www.linkedin.com/in/gauri-agarwal-software-developer"
+									class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" name="social-link"
+									aria-label="social-link" target="_blank">
 									<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
 										<path
 											d="M15.8333 2.5C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333ZM15.4167 15.4167V11C15.4167 10.2795 15.1304 9.5885 14.621 9.07903C14.1115 8.56955 13.4205 8.28333 12.7 8.28333C11.9917 8.28333 11.1667 8.71667 10.7667 9.36667V8.44167H8.44167V15.4167H10.7667V11.3083C10.7667 10.6667 11.2833 10.1417 11.925 10.1417C12.2344 10.1417 12.5312 10.2646 12.75 10.4834C12.9688 10.7022 13.0917 10.9989 13.0917 11.3083V15.4167H15.4167ZM5.73333 7.13333C6.10464 7.13333 6.46073 6.98583 6.72328 6.72328C6.98583 6.46073 7.13333 6.10464 7.13333 5.73333C7.13333 4.95833 6.50833 4.325 5.73333 4.325C5.35982 4.325 5.0016 4.47338 4.73749 4.73749C4.47338 5.0016 4.325 5.35982 4.325 5.73333C4.325 6.50833 4.95833 7.13333 5.73333 7.13333ZM6.89167 15.4167V8.44167H4.58333V15.4167H6.89167Z" />
@@ -1585,22 +972,24 @@ viewBox="0 0 30 30">
 				<div class="ab ak sm:a1M/2 lg:a1M/4">
 					<div class="aZ wow fadeInUp a1W au a4c a21 a1v a1f a2G a1G hover:a1H dark:a3" data-wow-delay="0s">
 						<div class="a2a a2c a1i">
-							<img src="images/ios pics/VITTHAL DUBEY.jpg" alt="team" class="a4d ab" />
+							<img src="images/ios pics/VITTHAL DUBEY.webp" alt="team" class="a4d ab" />
 						</div>
 						<div>
 							<h3 class="a2s aO aP a1k dark:aT">Vithal Dubey</h3>
 							<p class="a2d a1j a1R aQ dark:aS">Secretary</p>
 							<div class="a1N aa ac a1t a4e">
-								<a href="javascript:void(0)" target="_blank" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"
-									name="social-link" aria-label="social-link">
-									<svg class="a1B"
-width="20" height="20"
-viewBox="0 0 30 30">
-    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
-</svg>
+								<a href="https://www.instagram.com/vitthal_069/" target="_blank"
+									class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" name="social-link"
+									aria-label="social-link">
+									<svg class="a1B" width="20" height="20" viewBox="0 0 30 30">
+										<path
+											d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
+										</path>
+									</svg>
 								</a>
-								<a href="https://www.linkedin.com/in/vitthal-dubey(0)" target="_blank"class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"
-									name="social-link" aria-label="social-link">
+								<a href="https://www.linkedin.com/in/vitthal-dubey/" target="_blank"
+									class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" name="social-link"
+									aria-label="social-link">
 									<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
 										<path
 											d="M15.8333 2.5C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333ZM15.4167 15.4167V11C15.4167 10.2795 15.1304 9.5885 14.621 9.07903C14.1115 8.56955 13.4205 8.28333 12.7 8.28333C11.9917 8.28333 11.1667 8.71667 10.7667 9.36667V8.44167H8.44167V15.4167H10.7667V11.3083C10.7667 10.6667 11.2833 10.1417 11.925 10.1417C12.2344 10.1417 12.5312 10.2646 12.75 10.4834C12.9688 10.7022 13.0917 10.9989 13.0917 11.3083V15.4167H15.4167ZM5.73333 7.13333C6.10464 7.13333 6.46073 6.98583 6.72328 6.72328C6.98583 6.46073 7.13333 6.10464 7.13333 5.73333C7.13333 4.95833 6.50833 4.325 5.73333 4.325C5.35982 4.325 5.0016 4.47338 4.73749 4.73749C4.47338 5.0016 4.325 5.35982 4.325 5.73333C4.325 6.50833 4.95833 7.13333 5.73333 7.13333ZM6.89167 15.4167V8.44167H4.58333V15.4167H6.89167Z" />
@@ -1613,22 +1002,24 @@ viewBox="0 0 30 30">
 				<div class="ab ak sm:a1M/2 lg:a1M/4">
 					<div class="aZ wow fadeInUp a1W au a4c a21 a1v a1f a2G a1G hover:a1H dark:a3" data-wow-delay="0s">
 						<div class="a2a a2c a1i">
-							<img src="images/ios pics/MITALI PANCHAL.jpg" alt="team" class="a4d ab" />
+							<img src="images/ios pics/MITALI PANCHAL.webp" alt="team" class="a4d ab" />
 						</div>
 						<div>
 							<h3 class="a2s aO aP a1k dark:aT">Mitali Panchal</h3>
 							<p class="a2d a1j a1R aQ dark:aS">Joint Secretary</p>
 							<div class="a1N aa ac a1t a4e">
-								<a href="https://www.instagram.com/_mitalily__"target="_blank" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"
-									name="social-link" aria-label="social-link">
-									<svg class="a1B"
-width="20" height="20"
-viewBox="0 0 30 30">
-    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
-</svg>
+								<a href="https://www.instagram.com/_mitalily__" target="_blank"
+									class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" name="social-link"
+									aria-label="social-link">
+									<svg class="a1B" width="20" height="20" viewBox="0 0 30 30">
+										<path
+											d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
+										</path>
+									</svg>
 								</a>
-								<a href="https://www.linkedin.com/in/mitali-panchal-121702246"target="_blank" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"
-									name="social-link" aria-label="social-link">
+								<a href="https://www.linkedin.com/in/mitali-panchal-121702246" target="_blank"
+									class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" name="social-link"
+									aria-label="social-link">
 									<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
 										<path
 											d="M15.8333 2.5C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333ZM15.4167 15.4167V11C15.4167 10.2795 15.1304 9.5885 14.621 9.07903C14.1115 8.56955 13.4205 8.28333 12.7 8.28333C11.9917 8.28333 11.1667 8.71667 10.7667 9.36667V8.44167H8.44167V15.4167H10.7667V11.3083C10.7667 10.6667 11.2833 10.1417 11.925 10.1417C12.2344 10.1417 12.5312 10.2646 12.75 10.4834C12.9688 10.7022 13.0917 10.9989 13.0917 11.3083V15.4167H15.4167ZM5.73333 7.13333C6.10464 7.13333 6.46073 6.98583 6.72328 6.72328C6.98583 6.46073 7.13333 6.10464 7.13333 5.73333C7.13333 4.95833 6.50833 4.325 5.73333 4.325C5.35982 4.325 5.0016 4.47338 4.73749 4.73749C4.47338 5.0016 4.325 5.35982 4.325 5.73333C4.325 6.50833 4.95833 7.13333 5.73333 7.13333ZM6.89167 15.4167V8.44167H4.58333V15.4167H6.89167Z" />
@@ -1641,23 +1032,25 @@ viewBox="0 0 30 30">
 				<div class="ab ak sm:a1M/2 lg:a1M/4">
 					<div class="aZ wow fadeInUp a1W au a4c a21 a1v a1f a2G a1G hover:a1H dark:a3" data-wow-delay="0s">
 						<div class="a2a a2c a1i">
-							<img src="images/ios pics/ALPESH GARG.JPG" alt="team" class="a4d ab" />
+							<img src="images/ios pics/ALPESH GARG.webp" alt="team" class="a4d ab" />
 						</div>
 						<div>
 							<h3 class="a2s aO aP a1k dark:aT">Alpesh Garg</h3>
 							<p class="a2d a1j a1R aQ dark:aS">Manager</p>
-							
+
 							<div class="a1N aa ac a1t a4e">
-								<a href="https://www.instagram.com/_alpesh_garg"target="_blank" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"
-									name="social-link" aria-label="social-link">
-									<svg class="a1B"
-width="20" height="20"
-viewBox="0 0 30 30">
-    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
-</svg>
+								<a href="https://www.instagram.com/_alpesh_garg_/" target="_blank"
+									class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" name="social-link"
+									aria-label="social-link">
+									<svg class="a1B" width="20" height="20" viewBox="0 0 30 30">
+										<path
+											d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
+										</path>
+									</svg>
 								</a>
-								<a href="https://www.linkedin.com/in/alpesh-garg-963264225" target="_blank" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"
-									name="social-link" aria-label="social-link">
+								<a href="https://www.linkedin.com/in/alpesh-garg-963264225" target="_blank"
+									class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" name="social-link"
+									aria-label="social-link">
 									<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
 										<path
 											d="M15.8333 2.5C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333ZM15.4167 15.4167V11C15.4167 10.2795 15.1304 9.5885 14.621 9.07903C14.1115 8.56955 13.4205 8.28333 12.7 8.28333C11.9917 8.28333 11.1667 8.71667 10.7667 9.36667V8.44167H8.44167V15.4167H10.7667V11.3083C10.7667 10.6667 11.2833 10.1417 11.925 10.1417C12.2344 10.1417 12.5312 10.2646 12.75 10.4834C12.9688 10.7022 13.0917 10.9989 13.0917 11.3083V15.4167H15.4167ZM5.73333 7.13333C6.10464 7.13333 6.46073 6.98583 6.72328 6.72328C6.98583 6.46073 7.13333 6.10464 7.13333 5.73333C7.13333 4.95833 6.50833 4.325 5.73333 4.325C5.35982 4.325 5.0016 4.47338 4.73749 4.73749C4.47338 5.0016 4.325 5.35982 4.325 5.73333C4.325 6.50833 4.95833 7.13333 5.73333 7.13333ZM6.89167 15.4167V8.44167H4.58333V15.4167H6.89167Z" />
@@ -1670,22 +1063,24 @@ viewBox="0 0 30 30">
 				<div class="ab ak sm:a1M/2 lg:a1M/4">
 					<div class="aZ wow fadeInUp a1W au a4c a21 a1v a1f a2G a1G hover:a1H dark:a3" data-wow-delay="0s">
 						<div class="a2a a2c a1i">
-							<img src="images/ios pics/PRANJUL DWIVEDI.jpg" alt="team" class="a4d ab" />
+							<img src="images/ios pics/PRANJUL DWIVEDI.webp" alt="team" class="a4d ab" />
 						</div>
 						<div>
 							<h3 class="a2s aO aP a1k dark:aT">Pranjul Dwivedi</h3>
 							<p class="a2d a1j a1R aQ dark:aS">Chairman</p>
 							<div class="a1N aa ac a1t a4e">
-								<a href="https://www.instagram.com/___.pranjul" target="_blank" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"
-									name="social-link" aria-label="social-link">
-									<svg class="a1B"
-width="20" height="20"
-viewBox="0 0 30 30">
-    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
-</svg>
+								<a href="https://www.instagram.com/___.pranjul" target="_blank"
+									class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" name="social-link"
+									aria-label="social-link">
+									<svg class="a1B" width="20" height="20" viewBox="0 0 30 30">
+										<path
+											d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
+										</path>
+									</svg>
 								</a>
-								<a href="https://www.linkedin.com/in/pranjul-dwivedi" target="_blank" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"
-									name="social-link" aria-label="social-link">
+								<a href="https://www.linkedin.com/in/pranjul-dwivedi" target="_blank"
+									class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" name="social-link"
+									aria-label="social-link">
 									<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
 										<path
 											d="M15.8333 2.5C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333ZM15.4167 15.4167V11C15.4167 10.2795 15.1304 9.5885 14.621 9.07903C14.1115 8.56955 13.4205 8.28333 12.7 8.28333C11.9917 8.28333 11.1667 8.71667 10.7667 9.36667V8.44167H8.44167V15.4167H10.7667V11.3083C10.7667 10.6667 11.2833 10.1417 11.925 10.1417C12.2344 10.1417 12.5312 10.2646 12.75 10.4834C12.9688 10.7022 13.0917 10.9989 13.0917 11.3083V15.4167H15.4167ZM5.73333 7.13333C6.10464 7.13333 6.46073 6.98583 6.72328 6.72328C6.98583 6.46073 7.13333 6.10464 7.13333 5.73333C7.13333 4.95833 6.50833 4.325 5.73333 4.325C5.35982 4.325 5.0016 4.47338 4.73749 4.73749C4.47338 5.0016 4.325 5.35982 4.325 5.73333C4.325 6.50833 4.95833 7.13333 5.73333 7.13333ZM6.89167 15.4167V8.44167H4.58333V15.4167H6.89167Z" />
@@ -1699,9 +1094,8 @@ viewBox="0 0 30 30">
 				<br>
 			</div>
 		</div>
-	</section>
 	<!-- Start Chart Of Memebers -->
-<br><br>
+	<br><br>
 	<section class="af a2E">
 		<div class="ae">
 			<div class="au a1v a3O a1E dark:a1w[#14102C] sm:a3P sm:a3Q lg:a1E xl:a3Q">
@@ -1725,59 +1119,60 @@ viewBox="0 0 30 30">
 
 							<p class="aa">
 								<span class="a1p a3U a3V a1u a1w[#2347B9]"></span>
-								<span class="aO a1R aQ dark:aS"> Content Team : 5 Members </span>
-							</p>
-							<p class="aa">
-								<span class="a1p a3U a3V a1u a1w[#3363FF]"></span>
-								<span class="aO a1R aQ dark:aS">
-									Technical Teams : 6 Members
-								</span>
-							</p>
-							<p class="aa">
-								<span class="a1p a3U a3V a1u a1w[#8BA6FF]"></span>
-								<span class="aO a1R aQ dark:aS"> Developer Team : 5 Members </span>
-							</p>
-							<p class="aa">
-								<span class="a1p a3U a3V a1u a1w[#8696CA]"></span>
 								<span class="aO a1R aQ dark:aS">
 									Event Team : 10 Members
 								</span>
 							</p>
-
 							<p class="aa">
-								<span class="a1p a3U a3V a1u a1w[#8093F1]"></span>
+								<span class="a1p a3U a3V a1u a1w[#3363FF]"></span>
 								<span class="aO a1R aQ dark:aS">
-									Design Team : 5 Members
+									Social Marketing Team : 8 Members
 								</span>
 							</p>
-
 							<p class="aa">
-								<span class="a1p a3U a3V a1u a1w[#2589BD]"></span>
-								<span class="aO a1R aQ dark:aS">
-									Video Editing Team : 4 Members
-								</span>
-							</p>
-
-							<p class="aa">
-								<span class="a1p a3U a3V a1u a1w[#3E92EC]"></span>
-								<span class="aO a1R aQ dark:aS">
-									Photo & Videography Team : 4 Members
-								</span>
-							</p>
-
-							<p class="aa">
-								<span class="a1p a3U a3V a1u a1w[#2B9AA3]"></span>
+								<span class="a1p a3U a3V a1u a1w[#8BA6FF]"></span>
 								<span class="aO a1R aQ dark:aS">
 									PR Team : 7 Members
 								</span>
 							</p>
 
 							<p class="aa">
-								<span class="a1p a3U a3V a1u a1w[#99E6FF]"></span>
+								<span class="a1p a3U a3V a1u a1w[#8696CA]"></span>
 								<span class="aO a1R aQ dark:aS">
-									Social Marketing Team : 8 Members
+									Technical Teams : 6 Members
 								</span>
 							</p>
+
+							<p class="aa">
+								<span class="a1p a3U a3V a1u a1w[#8093F1]"></span>
+								<span class="aO a1R aQ dark:aS"> Content Team : 5 Members </span>
+							</p>
+							<p class="aa">
+								<span class="a1p a3U a3V a1u a1w[#2589BD]"></span>
+								<span class="aO a1R aQ dark:aS"> Developer Team : 5 Members </span>
+							</p>
+
+							<p class="aa">
+								<span class="a1p a3U a3V a1u a1w[#3E92EC]"></span>
+								<span class="aO a1R aQ dark:aS">
+									Design Team : 5 Members
+								</span>
+							</p>
+
+							<p class="aa">
+								<span class="a1p a3U a3V a1u a1w[#2B9AA3]"></span>
+								<span class="aO a1R aQ dark:aS">
+									Video Editing Team : 4 Members
+								</span>
+							</p>
+
+							<p class="aa">
+								<span class="a1p a3U a3V a1u a1w[#99E6FF]"></span>
+								<span class="aO a1R aQ dark:aS">
+									Photo & Videography Team : 4 Members
+								</span>
+							</p>
+
 							<p class="aa">
 								<span class="a1p a3U a3V a1u a1w[#907ADD]"></span>
 								<span class="aO a1R aQ dark:aS">
@@ -1794,9 +1189,10 @@ viewBox="0 0 30 30">
 			<img src="images/shapes/token-sale-shape.svg" alt="shape" />
 		</div>
 	</section>
-	<br>
+
 	<!-- End Chart OF Members-->
 
+	</section>
 	<!--
 		<section id="testimonial" class="a1v a1J[120px] a1T dark:a1w[#14102C]">
 			<div class="ae">
@@ -2493,7 +1889,7 @@ viewBox="0 0 30 30">
 						<div class="ab ak sm:a1M/2">
 							<div class="wow fadeInUp a4w aH[250px]" data-wow-delay="0s">
 								<h3 class="a1N aO aP a2u dark:aT">Phone Number</h3>
-								<p class="a1F a1R a4u aQ dark:aS"><a href="tel:8949598380">+91 89495 98380</a><br><a
+								<p class="a1F a1R a4u aQ dark:aS"><a href="tel:8949598320">+91 89495 98320</a><br><a
 										href="tel:9455594028">+91 94555 94028</a></p>
 							</div>
 						</div>
@@ -2547,37 +1943,68 @@ viewBox="0 0 30 30">
 				</div>
 				<div class="ab ak lg:a4x/12">
 					<div class="sm:a4y wow fadeInUp a1X a1 a3O a1E dark:a3" data-wow-delay="0s">
-						<h3 class="a2n a2B a1P a2u dark:aT sm:a2Q[34px] lg:a2B xl:a2Q[34px]">
+						<h3 class="a2n a2B a1P a2u dark:aT sm:a2Q[34px] lg:a2B xl:a2Q[34px]" id = "FORMTITLE" style="display: flex;">
 							Send us a Message
 						</h3>
-						<form>
+						<form name="submit-to-google-sheet" action="javascript:void(0)" id="CONTACTFORM">
 							<div class="a2K">
 								<label for="name" class="a2s an a1j a1R a2u dark:aT">
 									Full Name*
 								</label>
-								<input type="text" id="name" placeholder="Enter your full name"
-									class="ab a1X a1C a2l[#E9E9E9] a4z a22 a23 a1F a1R aS a24 focus:a1H dark:a4A dark:a1 dark:a4B" />
+								<input type="text" name="name" placeholder="Enter your full name"
+									class="ab a1X a1C a2l[#E9E9E9] a4z a22 a23 a1F a1R aS a24 focus:a1H dark:a4A dark:a1 dark:a4B" required/>
 							</div>
 							<div class="a2K">
 								<label for="email" class="a2s an a1j a1R a2u dark:aT">
 									Email Address*
 								</label>
-								<input type="email" id="email" placeholder="Enter your email address"
-									class="ab a1X a1C a2l[#E9E9E9] a4z a22 a23 a1F a1R aS a24 focus:a1H dark:a4A dark:a1 dark:a4B" />
+								<input type="email" name="email" placeholder="Enter your email address"
+									class="ab a1X a1C a2l[#E9E9E9] a4z a22 a23 a1F a1R aS a24 focus:a1H dark:a4A dark:a1 dark:a4B" required/>
 							</div>
 							<div class="a2K">
 								<label for="message" class="a2s an a1j a1R a2u dark:aT">
 									Message*
 								</label>
-								<textarea rows="6" id="message" placeholder="Type your message"
-									class="ab a1X a1C a2l[#E9E9E9] a4z a22 a23 a1F a1R aS a24 focus:a1H dark:a4A dark:a1 dark:a4B"></textarea>
+								<textarea rows="6" name="message" placeholder="Type your message"
+									class="ab a1X a1C a2l[#E9E9E9] a4z a22 a23 a1F a1R aS a24 focus:a1H dark:a4A dark:a1 dark:a4B" required></textarea>
 							</div>
 							<div>
-								<button class="ab a1u a1A a4C a2G a1F aP aT hover:a2X dark:a1 dark:a1k dark:hover:a2X">
+								<button id = "SubmitContactButton" onclick="validateForm()" class="ab a1u a1A a4C a2G a1F aP aT hover:a2X dark:a1 dark:a1k dark:hover:a2X">
 									Send Message
 								</button>
 							</div>
 						</form>
+						<script>
+							function validateForm(){
+								var Name = document.forms['submit-to-google-sheet']["name"].value;
+								var Email = document.forms['submit-to-google-sheet']["email"].value;
+								var regexp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+              					var Message = document.forms['submit-to-google-sheet']["message"].value;
+								if(!(Name == '' && Message == "") && regexp.test(String(Email).toLowerCase()) ){
+									SubmitContactForm();
+									
+								}
+							}
+
+							const scriptURL = 'https://script.google.com/macros/s/AKfycbzlVwvbwgLiw--NNq8qJdisuURiZSyLOw_eUhwCiwk66aj4iIw7X_OryPjg-_xYpP8iNg/exec';
+							const form = document.forms['submit-to-google-sheet'];
+							function SubmitContactForm() {
+								var data = new FormData(form);
+							  fetch(scriptURL, { method: 'POST', body: data})
+								.then(response => CloseContactForm())
+								.catch(error => alert("There Was Some Error Submitting the Form"))
+
+							}
+							function CloseContactForm(){
+								var FORM = document.getElementById("CONTACTFORM");
+								FORM.remove();
+								var Heading = document.getElementById("FORMTITLE");;
+								Heading.innerHTML = "Thanks For Submitting";
+								Heading.style.justifyContent="center";
+								
+
+							}
+						  </script>
 					</div>
 				</div>
 			</div>
@@ -2701,7 +2128,7 @@ viewBox="0 0 30 30">
 								Home
 							</a>
 							<a href="#roadmap" class="an a1F a1R aQ hover:aR dark:aS dark:hover:aR">
-								Roadmap
+								Roadmap</a>
 						</div>
 					</div>
 				</div>
@@ -2723,78 +2150,53 @@ viewBox="0 0 30 30">
 						</div>
 					</div>
 				</div>
-				
-					<div class="ab ak md:a1M/2 lg:a1M/2 xl:a1U/12">
-						<div class="wow fadeInUp a2_ xl:a30" data-wow-delay="0s">
-							<h2 class="a2K a2B a1P a1k dark:aT">News & Post</h2>
-							<div class="a34">
-								<div class="aa">
-									<div class="a20 aC[75px] ab aH[75px] a1X">
-										<img
-											src="images/footer/blog-01.jpg"
-											alt="post"
-											class="a2w ab a1X a2x a2y"
-										/>
-									</div>
-									<div>
-										<a
-											href="javascript:void(0)"
-											class="a1F a1R aQ hover:aR dark:aS dark:hover:aR"
-										>
-											Roll Out New Features Without Hurting Loyal Users
-										</a>
-										<p class="aa ac">
-											<span class="a35 aQ dark:aS">
-												<svg
-													width="14"
-													height="16"
-													viewBox="0 0 14 16"
-													class="a1B"
-												>
-													<path
-														d="M3.25 8H4.75V9.5H3.25V8ZM13.75 3.5V14C13.75 14.3978 13.592 14.7794 13.3107 15.0607C13.0294 15.342 12.6478 15.5 12.25 15.5H1.75C0.9175 15.5 0.25 14.825 0.25 14V3.5C0.25 3.10218 0.408035 2.72064 0.68934 2.43934C0.970644 2.15804 1.35218 2 1.75 2H2.5V0.5H4V2H10V0.5H11.5V2H12.25C12.6478 2 13.0294 2.15804 13.3107 2.43934C13.592 2.72064 13.75 3.10218 13.75 3.5ZM1.75 5H12.25V3.5H1.75V5ZM12.25 14V6.5H1.75V14H12.25ZM9.25 9.5V8H10.75V9.5H9.25ZM6.25 9.5V8H7.75V9.5H6.25ZM3.25 11H4.75V12.5H3.25V11ZM9.25 12.5V11H10.75V12.5H9.25ZM6.25 12.5V11H7.75V12.5H6.25Z"
-													/>
-												</svg>
-											</span>
-											<span class="a1j a1R aQ dark:aS"> Dec 18, 2025 </span>
-										</p>
-									</div>
+			-->
+				<div class="ab ak md:a1M/2 lg:a1M/2 xl:a1U/12">
+					<div class="wow fadeInUp a2_ xl:a30" data-wow-delay="0s">
+						<h2 class="a2K a2B a1P a1k dark:aT">News & Posts</h2>
+						<div class="a34">
+							<div class="aa">
+								<div class="a20 aC[75px] ab aH[75px] a1X">
+									<img src="images/logo/gameflixlogo.webp" alt="post" class="a2w ab a1X a2x a2y" />
 								</div>
-								<div class="aa">
-									<div class="a20 aC[75px] ab aH[75px] a1X">
-										<img
-											src="images/footer/blog-02.jpg"
-											alt="post"
-											class="a2w ab a1X a2x a2y"
-										/>
-									</div>
-									<div>
-										<a
-											href="javascript:void(0)"
-											class="a1F a1R aQ hover:aR dark:aS dark:hover:aR"
-										>
-											Top 10 Best Cryptocurrency Blogs and Websites
-										</a>
-										<p class="aa ac">
-											<span class="a35 aQ dark:aS">
-												<svg
-													width="14"
-													height="16"
-													viewBox="0 0 14 16"
-													class="a1B"
-												>
-													<path
-														d="M3.25 8H4.75V9.5H3.25V8ZM13.75 3.5V14C13.75 14.3978 13.592 14.7794 13.3107 15.0607C13.0294 15.342 12.6478 15.5 12.25 15.5H1.75C0.9175 15.5 0.25 14.825 0.25 14V3.5C0.25 3.10218 0.408035 2.72064 0.68934 2.43934C0.970644 2.15804 1.35218 2 1.75 2H2.5V0.5H4V2H10V0.5H11.5V2H12.25C12.6478 2 13.0294 2.15804 13.3107 2.43934C13.592 2.72064 13.75 3.10218 13.75 3.5ZM1.75 5H12.25V3.5H1.75V5ZM12.25 14V6.5H1.75V14H12.25ZM9.25 9.5V8H10.75V9.5H9.25ZM6.25 9.5V8H7.75V9.5H6.25ZM3.25 11H4.75V12.5H3.25V11ZM9.25 12.5V11H10.75V12.5H9.25ZM6.25 12.5V11H7.75V12.5H6.25Z"
-													/>
-												</svg>
-											</span>
-											<span class="a1j a1R aQ dark:aS"> Dec 18, 2025 </span>
-										</p>
-									</div>
+								<div>
+									<a href="https://docs.google.com/forms/d/e/1FAIpQLSc0GXzQNSImCr3wB7kzbht0o_r3iRTDzA7_DfcoO_nC_gmkRQ/viewform"
+										target="_blank" class="a1F a1R aQ hover:aR dark:aS dark:hover:aR">
+										GameFlix Seats Filling Faster Than Any Other Event. Reserve Yours Now
+									</a>
+									<p class="aa ac" style="padding-top: 3px;">
+										<span class="a35 aQ dark:aS">
+											<svg width="14" height="16" viewBox="0 0 14 16" class="a1B">
+												<path
+													d="M3.25 8H4.75V9.5H3.25V8ZM13.75 3.5V14C13.75 14.3978 13.592 14.7794 13.3107 15.0607C13.0294 15.342 12.6478 15.5 12.25 15.5H1.75C0.9175 15.5 0.25 14.825 0.25 14V3.5C0.25 3.10218 0.408035 2.72064 0.68934 2.43934C0.970644 2.15804 1.35218 2 1.75 2H2.5V0.5H4V2H10V0.5H11.5V2H12.25C12.6478 2 13.0294 2.15804 13.3107 2.43934C13.592 2.72064 13.75 3.10218 13.75 3.5ZM1.75 5H12.25V3.5H1.75V5ZM12.25 14V6.5H1.75V14H12.25ZM9.25 9.5V8H10.75V9.5H9.25ZM6.25 9.5V8H7.75V9.5H6.25ZM3.25 11H4.75V12.5H3.25V11ZM9.25 12.5V11H10.75V12.5H9.25ZM6.25 12.5V11H7.75V12.5H6.25Z" />
+											</svg>
+										</span>
+										<span class="a1j a1R aQ dark:aS"> Jan 29, 2023 </span>
+									</p>
+								</div>
+							</div>
+							<div class="aa">
+								<div class="a20 aC[75px] ab aH[75px] a1X">
+									<img src="images/logo/sampurnalogo.webp" alt="post" class="a2w ab a1X a2x a2y" />
+								</div>
+								<div>
+									<a class="a1F a1R aQ hover:aR dark:aS dark:hover:aR">
+										Sampurna to KickStart on 30<sup>th</sup> Jan, Are You Ready ?
+									</a>
+									<p class="aa ac" style="padding-top: 3px;">
+										<span class="a35 aQ dark:aS">
+											<svg width="14" height="16" viewBox="0 0 14 16" class="a1B">
+												<path
+													d="M3.25 8H4.75V9.5H3.25V8ZM13.75 3.5V14C13.75 14.3978 13.592 14.7794 13.3107 15.0607C13.0294 15.342 12.6478 15.5 12.25 15.5H1.75C0.9175 15.5 0.25 14.825 0.25 14V3.5C0.25 3.10218 0.408035 2.72064 0.68934 2.43934C0.970644 2.15804 1.35218 2 1.75 2H2.5V0.5H4V2H10V0.5H11.5V2H12.25C12.6478 2 13.0294 2.15804 13.3107 2.43934C13.592 2.72064 13.75 3.10218 13.75 3.5ZM1.75 5H12.25V3.5H1.75V5ZM12.25 14V6.5H1.75V14H12.25ZM9.25 9.5V8H10.75V9.5H9.25ZM6.25 9.5V8H7.75V9.5H6.25ZM3.25 11H4.75V12.5H3.25V11ZM9.25 12.5V11H10.75V12.5H9.25ZM6.25 12.5V11H7.75V12.5H6.25Z" />
+											</svg>
+										</span>
+										<span class="a1j a1R aQ dark:aS"> Jan 21, 2023 </span>
+									</p>
 								</div>
 							</div>
 						</div>
-					</div>-->
+					</div>
+				</div>
 			</div>
 			<div class="wow fadeInUp a36 a2l[#F3F4F4] a37 a2G dark:a2l[#2D2C4A]" data-wow-delay="0s">
 				<p class="a1F a1R a4u aQ dark:aS">
@@ -2814,8 +2216,6 @@ viewBox="0 0 30 30">
 		class="hover:a38 back-to-top ad a39 a3a a3b a2I[999] aa a32 a33 ac a1t au a1A aT a3c a3d">
 		<span class="a10[6px] a3e a3f az a36 a3g a1I"></span>
 	</a>
-
-	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 	<script src="js/apexcharts.min.js"></script>
 	<script src="js/main.js"></script>
 	<script>
@@ -2863,9 +2263,11 @@ viewBox="0 0 30 30">
 
 		// ====
 		var options = {
-			series: [5, 6, 5, 10, 5, 4, 4, 7, 8, 4],
-			labels: ["Content", "Technical", "Developer", "Event", "Design", "Video Editing", "Photo and Video", "PR",
-				"Social and Marketing", "Anchoring"
+			series: [10, 8, 7, 6, 5, 5, 5, 4, 4, 4],
+
+			labels: ["Event", "Social and Marketing", "PR", "Technical", "Content", "Developer", "Design",
+				"Video Editing", "Photo and Video",
+				"Anchoring"
 			],
 			chart: {
 				type: "donut",
