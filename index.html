@@ -175,18 +175,18 @@
 		</div>
 	</header>
 	<section>
-		<!-- POPUP --> 
+		<!-- POPUP -->
 
 		<script>
 			function showPopUp() {
-				document.getElementById("POPUP").style.display = "none";
+				document.getElementById("POPUP").style.display = "flex";
 			}
 
 			function ClosePopUp() {
 
 				document.getElementById("POPUP").style.display = "none";
 			}
-			
+
 			onload(showPopUp());
 		</script>
 
@@ -208,7 +208,8 @@
 				align-items: center;
 				animation-duration: 250ms;
 			}
-			#POPUP img{
+
+			#POPUP img {
 				z-index: 10000;
 				display: flex;
 				height: 85%;
@@ -216,28 +217,31 @@
 				top: 50%;
 				justify-content: center;
 				justify-self: center;
-				width : auto;
+				width: auto;
 			}
-			#POPUP img .close{
+
+			#POPUP img .close {
 				height: 10px;
 				width: 10px;
 			}
 		</style>
 		<centre>
-			<div id="POPUP" style="display: flex;align-content: center;justify-content: center;align-items: center;justify-items: center;flex-direction: column;flex-wrap: nowrap;">
+			<div id="POPUP"
+				style="display: flex;align-content: center;justify-content: center;align-items: center;justify-items: center;flex-direction: column;flex-wrap: nowrap;">
 				<img src="./images/logo/popup.webp">
 				<div>
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLSc0GXzQNSImCr3wB7kzbht0o_r3iRTDzA7_DfcoO_nC_gmkRQ/viewform" target="_blank">
-					<button class="event_register_button" onclick="ClosePopUp()">Register Now</button>
-				</a>
-				&nbsp&nbsp
-				<button class="event_register_button" onclick="ClosePopUp()">Close</button></a></div>
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLSc0GXzQNSImCr3wB7kzbht0o_r3iRTDzA7_DfcoO_nC_gmkRQ/viewform"
+						target="_blank">
+						<button class="event_register_button" onclick="ClosePopUp()">Register Now</button>
+					</a>
+					&nbsp&nbsp
+					<button class="event_register_button" onclick="ClosePopUp()">Close</button></a></div>
 			</div>
 		</centre>
 		<!-- -->
 	</section>
 	<section id="home" class="af a2E a3p a3q">
-		
+
 		<!--          ANIMATION          -->
 		<!--  
 	  
@@ -872,7 +876,7 @@ input[type=radio] {
 </style>
 -->
 		<!--        ANIMATION END        -->
-		 <div class="ae">
+		<div class="ae">
 			<div class="ag aa a1L">
 				<div class="ab ak">
 					<div class="a3r aH[720px] a2G">
@@ -1294,35 +1298,36 @@ input[type=radio] {
 				</div>
 			</div>
 		</div>
-	<section id="roadmap" class="af a2E aw[120px]">
-		<div class="ae">
-			<div class="wow fadeInUp a3r a3K aH[590px] a2G md:a30" data-wow-delay="0s">
-				<span class="a2d aO a1P a3L aR sm:a1O"> ROADMAP </span>
-				<h2 class="a2d a2o a1P a2p a1k dark:aT md:a2Q[45px]">The Timeline</h2>
-				<p class="aO a1R aQ dark:aS">
-					Here are All Upcoming, OnGoing and Past Events organized by our Club in Offline an Online Modes
-				</p>
-			</div>
-			<div class="ag aa a1t">
-				<div class="ab ak lg:a33/12 xl:a2N/12">
-					<div class="wow fadeInUp af ag aa a1L md:a3X lg:a3Y" data-wow-delay="0s">
-						<span class="aq a8 a3Z ao a2w aD[2px] a1v dark:a1w[#2D2C4A] md:a3z/2 md:an"></span>
-						<div class="ab ak md:a1M/2">
-							<div class="af a2E a1W au a1v a3_ aI dark:a3 md:a2k md:a1Q md:a2L lg:a20">
-								<span
-									class="aq as/2 a1a ao a40 a1U at/2 a1u a41 a1H a1 dark:a27 md:a3b md:a42 md:an lg:a43"></span>
-								<span class="aq a44 as/2 ao a3e a3f at/2 az a1v dark:a3 md:an"></span>
-								<h3 class="a2d a1O a1P a1k dark:aT">GameFlix</h3>
-								<h3 class="a2d a1Odate a1P a1k dark:aT">9 Feb, 2023</h3>
-								<p class="a2K a1F a1R aQ dark:aS">
-									<strong> GameFlix</strong> is iOS Club’s flagship event at <strong>AdVITya</strong>.
-									A 6-hour long fun and challenging series of games that consists of the three
-									rounds:<br>
-									Round 1: Money Heist<br>
-									Round 2: Squid Game<br>
-									Round 3: Wednesday<br>
-								</p>
-								<!--
+		<section id="roadmap" class="af a2E aw[120px]">
+			<div class="ae">
+				<div class="wow fadeInUp a3r a3K aH[590px] a2G md:a30" data-wow-delay="0s">
+					<span class="a2d aO a1P a3L aR sm:a1O"> ROADMAP </span>
+					<h2 class="a2d a2o a1P a2p a1k dark:aT md:a2Q[45px]">The Timeline</h2>
+					<p class="aO a1R aQ dark:aS">
+						Here are All Upcoming, OnGoing and Past Events organized by our Club in Offline an Online Modes
+					</p>
+				</div>
+				<div class="ag aa a1t">
+					<div class="ab ak lg:a33/12 xl:a2N/12">
+						<div class="wow fadeInUp af ag aa a1L md:a3X lg:a3Y" data-wow-delay="0s">
+							<span class="aq a8 a3Z ao a2w aD[2px] a1v dark:a1w[#2D2C4A] md:a3z/2 md:an"></span>
+							<div class="ab ak md:a1M/2">
+								<div class="af a2E a1W au a1v a3_ aI dark:a3 md:a2k md:a1Q md:a2L lg:a20">
+									<span
+										class="aq as/2 a1a ao a40 a1U at/2 a1u a41 a1H a1 dark:a27 md:a3b md:a42 md:an lg:a43"></span>
+									<span class="aq a44 as/2 ao a3e a3f at/2 az a1v dark:a3 md:an"></span>
+									<h3 class="a2d a1O a1P a1k dark:aT">GameFlix</h3>
+									<h3 class="a2d a1Odate a1P a1k dark:aT">9 Feb, 2023</h3>
+									<p class="a2K a1F a1R aQ dark:aS">
+										<strong> GameFlix</strong> is iOS Club’s flagship event at
+										<strong>AdVITya</strong>.
+										A 6-hour long fun and challenging series of games that consists of the three
+										rounds:<br>
+										Round 1: Money Heist<br>
+										Round 2: Squid Game<br>
+										Round 3: Wednesday<br>
+									</p>
+									<!--
 								<a href="" class="aV ac a1t a1u a1 a45 a46">
 									<span class="a35">
 										<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
@@ -1347,23 +1352,25 @@ input[type=radio] {
 									</span>
 								</a>
 							-->
+								</div>
 							</div>
-						</div>
-						<div class="ab ak md:a1M/2"></div>
-						<div class="ab ak md:a1M/2"></div>
-						<div class="ab ak md:a1M/2">
-							<div class="af a2E a1W au a1v a3_ aI dark:a3 md:a2O md:a1Q lg:a47">
-								<span
-									class="aq as/2 a1a ao a40 a1U at/2 a1u a41 a1H a1 dark:a27 md:a48 md:a49 md:an lg:a4a"></span>
-								<span class="aq a4b as/2 ao a3e a3f at/2 az a1v dark:a3 md:an"></span>
-								<h3 class="a2d a1O a1P a1k dark:aT">Sampurna</h3>
-								<h3 class="a2d a1Odate a1P a1k dark:aT">Jan 31 - Feb 1, 2023</h3>
-								<p class="a2K a1F a1R aQ dark:aS">A 3-day Offline Business Hackathon Event - <strong>‘Sampurna’</strong>.<strong> Sampurna</strong> brings together more than 500 of the
-									brightest minds from various Domains to solve real-world business problems and
-									foster
-									a collaborative and innovative environment.
-								</p>
-								<!--
+							<div class="ab ak md:a1M/2"></div>
+							<div class="ab ak md:a1M/2"></div>
+							<div class="ab ak md:a1M/2">
+								<div class="af a2E a1W au a1v a3_ aI dark:a3 md:a2O md:a1Q lg:a47">
+									<span
+										class="aq as/2 a1a ao a40 a1U at/2 a1u a41 a1H a1 dark:a27 md:a48 md:a49 md:an lg:a4a"></span>
+									<span class="aq a4b as/2 ao a3e a3f at/2 az a1v dark:a3 md:an"></span>
+									<h3 class="a2d a1O a1P a1k dark:aT">Sampurna</h3>
+									<h3 class="a2d a1Odate a1P a1k dark:aT">Jan 31 - Feb 1, 2023</h3>
+									<p class="a2K a1F a1R aQ dark:aS">A 3-day Offline Business Hackathon Event -
+										<strong>‘Sampurna’</strong>.<strong> Sampurna</strong> brings together more than
+										500 of the
+										brightest minds from various Domains to solve real-world business problems and
+										foster
+										a collaborative and innovative environment.
+									</p>
+									<!--
 								<a href="" class="aV ac a1t a1u a1 a45 a46">
 									<span class="a35">
 										<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
@@ -1406,24 +1413,27 @@ input[type=radio] {
 										</svg>
 									</span>
 								</a>-->
+								</div>
 							</div>
-						</div>
-						<div class="ab ak md:a1M/2">
-							<div class="af a2E a1W au a1v a3_ aI dark:a3 md:a2k md:a1Q md:a2L lg:a20">
-								<span
-									class="aq as/2 a1a ao a40 a1U at/2 a1u a41 a1H a1 dark:a27 md:a3b md:a42 md:an lg:a43"></span>
-								<span class="aq a44 as/2 ao a3e a3f at/2 az a1v dark:a3 md:an"></span>
-								<h3 class="a2d a1O a1P a1k dark:aT">Inaugural Ceremony</h3>
-								<h3 class="a2d a1Odate a1P a1k dark:aT">Nov 11, 2022</h3>
-								<p class="a2K a1F a1R aQ dark:aS">It was the first event organized by iOS Club at VIT
-									Bhopal.
-									The event was graced by the honorary Chief Guest, Kashish Sharma, who is currently
-									working as an iOS intern at automobile giant -
-									Mercedes
-									Benz.
-									The ceremony was followed by <strong>HiJack-iT</strong>, a fun code-breaker competition
-								</p>
-								<!--
+							<div class="ab ak md:a1M/2">
+								<div class="af a2E a1W au a1v a3_ aI dark:a3 md:a2k md:a1Q md:a2L lg:a20">
+									<span
+										class="aq as/2 a1a ao a40 a1U at/2 a1u a41 a1H a1 dark:a27 md:a3b md:a42 md:an lg:a43"></span>
+									<span class="aq a44 as/2 ao a3e a3f at/2 az a1v dark:a3 md:an"></span>
+									<h3 class="a2d a1O a1P a1k dark:aT">Inaugural Ceremony</h3>
+									<h3 class="a2d a1Odate a1P a1k dark:aT">Nov 11, 2022</h3>
+									<p class="a2K a1F a1R aQ dark:aS">It was the first event organized by iOS Club at
+										VIT
+										Bhopal.
+										The event was graced by the honorary Chief Guest, Kashish Sharma, who is
+										currently
+										working as an iOS intern at automobile giant -
+										Mercedes
+										Benz.
+										The ceremony was followed by <strong>HiJack-iT</strong>, a fun code-breaker
+										competition
+									</p>
+									<!--
 									<a href="" class="aV ac a1t a1u a1 a45 a46">
 										<span class="a35">
 											<svg
@@ -1461,342 +1471,364 @@ input[type=radio] {
 										</span>
 									</a>
 								-->
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="aq a1a a2J a2Z">
-			<img src="images/shapes/timeline.svg" alt="shape" />
-		</div>
-	</section>
-
-	<section id="team" class="a36 a2l[#F3F4F4] a1J[120px] a1T dark:a2l[#2D2C4A]">
-		<div class="ae">
-			<div class="wow fadeInUp a3r a3K aH[590px] a2G md:a30" data-wow-delay="0s">
-				<span class="a2d aO a1P a3L aR sm:a1O"> OUR TEAM </span>
-				<h2 class="a2d a2o a1P a2p a1k dark:aT md:a2Q[45px]">
-					Meet Our Team
-				</h2>
-				<p class="aO a1R aQ dark:aS">
-					Here is Our Great Team That Makes Everything Related to This Club Possible.
-				</p>
+			<div class="aq a1a a2J a2Z">
+				<img src="images/shapes/timeline.svg" alt="shape" />
 			</div>
+		</section>
 
-			<div class="ag aa a1L">
-				<div class="ab ak sm:a1M/2 lg:a1M/4">
-					<div class="aZ wow fadeInUp a1W au a4c a21 a1v a1f a2G a1G hover:a1H dark:a3" data-wow-delay="0s">
-						<div class="a2a a2c a1i">
-							<img src="images/ios pics/AB ROUF SIR.webp" alt="team" class="a4d ab" />
-						</div>
-						<div>
-							<h3 class="a2s aO aP a1k dark:aT">Dr. AB Rouf</h3>
-							<p class="a2d a1j a1R aQ dark:aS">Faculty Coordinator</p>
-							<div class="a1N aa ac a1t a4e">
-								<a href="https://www.linkedin.com/in/rouf-khan" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"target="_blank"
-									name="social-link" aria-label="social-link">
-									<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
-										<path
-											d="M15.8333 2.5C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333ZM15.4167 15.4167V11C15.4167 10.2795 15.1304 9.5885 14.621 9.07903C14.1115 8.56955 13.4205 8.28333 12.7 8.28333C11.9917 8.28333 11.1667 8.71667 10.7667 9.36667V8.44167H8.44167V15.4167H10.7667V11.3083C10.7667 10.6667 11.2833 10.1417 11.925 10.1417C12.2344 10.1417 12.5312 10.2646 12.75 10.4834C12.9688 10.7022 13.0917 10.9989 13.0917 11.3083V15.4167H15.4167ZM5.73333 7.13333C6.10464 7.13333 6.46073 6.98583 6.72328 6.72328C6.98583 6.46073 7.13333 6.10464 7.13333 5.73333C7.13333 4.95833 6.50833 4.325 5.73333 4.325C5.35982 4.325 5.0016 4.47338 4.73749 4.73749C4.47338 5.0016 4.325 5.35982 4.325 5.73333C4.325 6.50833 4.95833 7.13333 5.73333 7.13333ZM6.89167 15.4167V8.44167H4.58333V15.4167H6.89167Z" />
-									</svg>
-								</a>
+		<section id="team" class="a36 a2l[#F3F4F4] a1J[120px] a1T dark:a2l[#2D2C4A]">
+			<div class="ae">
+				<div class="wow fadeInUp a3r a3K aH[590px] a2G md:a30" data-wow-delay="0s">
+					<span class="a2d aO a1P a3L aR sm:a1O"> OUR TEAM </span>
+					<h2 class="a2d a2o a1P a2p a1k dark:aT md:a2Q[45px]">
+						Meet Our Team
+					</h2>
+					<p class="aO a1R aQ dark:aS">
+						Here is Our Great Team That Makes Everything Related to This Club Possible.
+					</p>
+				</div>
+
+				<div class="ag aa a1L">
+					<div class="ab ak sm:a1M/2 lg:a1M/4">
+						<div class="aZ wow fadeInUp a1W au a4c a21 a1v a1f a2G a1G hover:a1H dark:a3"
+							data-wow-delay="0s">
+							<div class="a2a a2c a1i">
+								<img src="images/ios pics/AB ROUF SIR.webp" alt="team" class="a4d ab" />
+							</div>
+							<div>
+								<h3 class="a2s aO aP a1k dark:aT">Dr. AB Rouf</h3>
+								<p class="a2d a1j a1R aQ dark:aS">Faculty Coordinator</p>
+								<div class="a1N aa ac a1t a4e">
+									<a href="https://www.linkedin.com/in/rouf-khan"
+										class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" target="_blank"
+										name="social-link" aria-label="social-link">
+										<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
+											<path
+												d="M15.8333 2.5C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333ZM15.4167 15.4167V11C15.4167 10.2795 15.1304 9.5885 14.621 9.07903C14.1115 8.56955 13.4205 8.28333 12.7 8.28333C11.9917 8.28333 11.1667 8.71667 10.7667 9.36667V8.44167H8.44167V15.4167H10.7667V11.3083C10.7667 10.6667 11.2833 10.1417 11.925 10.1417C12.2344 10.1417 12.5312 10.2646 12.75 10.4834C12.9688 10.7022 13.0917 10.9989 13.0917 11.3083V15.4167H15.4167ZM5.73333 7.13333C6.10464 7.13333 6.46073 6.98583 6.72328 6.72328C6.98583 6.46073 7.13333 6.10464 7.13333 5.73333C7.13333 4.95833 6.50833 4.325 5.73333 4.325C5.35982 4.325 5.0016 4.47338 4.73749 4.73749C4.47338 5.0016 4.325 5.35982 4.325 5.73333C4.325 6.50833 4.95833 7.13333 5.73333 7.13333ZM6.89167 15.4167V8.44167H4.58333V15.4167H6.89167Z" />
+										</svg>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="ab ak sm:a1M/2 lg:a1M/4">
-					<div class="aZ wow fadeInUp a1W au a4c a21 a1v a1f a2G a1G hover:a1H dark:a3" data-wow-delay="0s">
-						<div class="a2a a2c a1i">
-							<img src="images/ios pics/E NIRMALA MAAM.webp" alt="team" class="a4d ab" />
-						</div>
-						<div>
-							<h3 class="a2s aO aP a1k dark:aT">Dr. E Nirmala </h3>
-							<p class="a2d a1j a1R aQ dark:aS">Faculty Coordinator</p>
-							<div class="a1N aa ac a1t a4e">
-								<a href="https://www.linkedin.com/in/nirmala-e-198b2623b" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"target="_blank"
-									name="social-link" aria-label="social-link">
-									<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
-										<path
-											d="M15.8333 2.5C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333ZM15.4167 15.4167V11C15.4167 10.2795 15.1304 9.5885 14.621 9.07903C14.1115 8.56955 13.4205 8.28333 12.7 8.28333C11.9917 8.28333 11.1667 8.71667 10.7667 9.36667V8.44167H8.44167V15.4167H10.7667V11.3083C10.7667 10.6667 11.2833 10.1417 11.925 10.1417C12.2344 10.1417 12.5312 10.2646 12.75 10.4834C12.9688 10.7022 13.0917 10.9989 13.0917 11.3083V15.4167H15.4167ZM5.73333 7.13333C6.10464 7.13333 6.46073 6.98583 6.72328 6.72328C6.98583 6.46073 7.13333 6.10464 7.13333 5.73333C7.13333 4.95833 6.50833 4.325 5.73333 4.325C5.35982 4.325 5.0016 4.47338 4.73749 4.73749C4.47338 5.0016 4.325 5.35982 4.325 5.73333C4.325 6.50833 4.95833 7.13333 5.73333 7.13333ZM6.89167 15.4167V8.44167H4.58333V15.4167H6.89167Z" />
-									</svg>
-								</a>
+					<div class="ab ak sm:a1M/2 lg:a1M/4">
+						<div class="aZ wow fadeInUp a1W au a4c a21 a1v a1f a2G a1G hover:a1H dark:a3"
+							data-wow-delay="0s">
+							<div class="a2a a2c a1i">
+								<img src="images/ios pics/E NIRMALA MAAM.webp" alt="team" class="a4d ab" />
+							</div>
+							<div>
+								<h3 class="a2s aO aP a1k dark:aT">Dr. E Nirmala </h3>
+								<p class="a2d a1j a1R aQ dark:aS">Faculty Coordinator</p>
+								<div class="a1N aa ac a1t a4e">
+									<a href="https://www.linkedin.com/in/nirmala-e-198b2623b"
+										class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" target="_blank"
+										name="social-link" aria-label="social-link">
+										<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
+											<path
+												d="M15.8333 2.5C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333ZM15.4167 15.4167V11C15.4167 10.2795 15.1304 9.5885 14.621 9.07903C14.1115 8.56955 13.4205 8.28333 12.7 8.28333C11.9917 8.28333 11.1667 8.71667 10.7667 9.36667V8.44167H8.44167V15.4167H10.7667V11.3083C10.7667 10.6667 11.2833 10.1417 11.925 10.1417C12.2344 10.1417 12.5312 10.2646 12.75 10.4834C12.9688 10.7022 13.0917 10.9989 13.0917 11.3083V15.4167H15.4167ZM5.73333 7.13333C6.10464 7.13333 6.46073 6.98583 6.72328 6.72328C6.98583 6.46073 7.13333 6.10464 7.13333 5.73333C7.13333 4.95833 6.50833 4.325 5.73333 4.325C5.35982 4.325 5.0016 4.47338 4.73749 4.73749C4.47338 5.0016 4.325 5.35982 4.325 5.73333C4.325 6.50833 4.95833 7.13333 5.73333 7.13333ZM6.89167 15.4167V8.44167H4.58333V15.4167H6.89167Z" />
+										</svg>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="ab ak sm:a1M/2 lg:a1M/4">
-					<div class="aZ wow fadeInUp a1W au a4c a21 a1v a1f a2G a1G hover:a1H dark:a3" data-wow-delay="0s">
-						<div class="a2a a2c a1i">
-							<img src="images/ios pics/SHARAD JHA.webp" alt="team" class="a4d ab" />
-						</div>
-						<div>
-							<h3 class="a2s aO aP a1k dark:aT">Sharad Jha</h3>
-							<p class="a2d a1j a1R aQ dark:aS">President</p>
-							<div class="a1N aa ac a1t a4e">
-								<a href="https://www.instagram.com/sharad_10.10" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"target="_blank"
-									name="social-link" aria-label="social-link">
-									<svg class="a1B"
-width="20" height="20"
-viewBox="0 0 30 30">
-    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
-</svg>
-								</a>
-								<a href="https://www.linkedin.com/in/sharad-jha-4260a9218" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"target="_blank"
-									name="social-link" aria-label="social-link">
-									<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
-										<path
-											d="M15.8333 2.5C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333ZM15.4167 15.4167V11C15.4167 10.2795 15.1304 9.5885 14.621 9.07903C14.1115 8.56955 13.4205 8.28333 12.7 8.28333C11.9917 8.28333 11.1667 8.71667 10.7667 9.36667V8.44167H8.44167V15.4167H10.7667V11.3083C10.7667 10.6667 11.2833 10.1417 11.925 10.1417C12.2344 10.1417 12.5312 10.2646 12.75 10.4834C12.9688 10.7022 13.0917 10.9989 13.0917 11.3083V15.4167H15.4167ZM5.73333 7.13333C6.10464 7.13333 6.46073 6.98583 6.72328 6.72328C6.98583 6.46073 7.13333 6.10464 7.13333 5.73333C7.13333 4.95833 6.50833 4.325 5.73333 4.325C5.35982 4.325 5.0016 4.47338 4.73749 4.73749C4.47338 5.0016 4.325 5.35982 4.325 5.73333C4.325 6.50833 4.95833 7.13333 5.73333 7.13333ZM6.89167 15.4167V8.44167H4.58333V15.4167H6.89167Z" />
-									</svg>
-								</a>
+					<div class="ab ak sm:a1M/2 lg:a1M/4">
+						<div class="aZ wow fadeInUp a1W au a4c a21 a1v a1f a2G a1G hover:a1H dark:a3"
+							data-wow-delay="0s">
+							<div class="a2a a2c a1i">
+								<img src="images/ios pics/SHARAD JHA.webp" alt="team" class="a4d ab" />
+							</div>
+							<div>
+								<h3 class="a2s aO aP a1k dark:aT">Sharad Jha</h3>
+								<p class="a2d a1j a1R aQ dark:aS">President</p>
+								<div class="a1N aa ac a1t a4e">
+									<a href="https://www.instagram.com/sharad_10.10"
+										class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" target="_blank"
+										name="social-link" aria-label="social-link">
+										<svg class="a1B" width="20" height="20" viewBox="0 0 30 30">
+											<path
+												d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
+											</path>
+										</svg>
+									</a>
+									<a href="https://www.linkedin.com/in/sharad-jha-4260a9218"
+										class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" target="_blank"
+										name="social-link" aria-label="social-link">
+										<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
+											<path
+												d="M15.8333 2.5C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333ZM15.4167 15.4167V11C15.4167 10.2795 15.1304 9.5885 14.621 9.07903C14.1115 8.56955 13.4205 8.28333 12.7 8.28333C11.9917 8.28333 11.1667 8.71667 10.7667 9.36667V8.44167H8.44167V15.4167H10.7667V11.3083C10.7667 10.6667 11.2833 10.1417 11.925 10.1417C12.2344 10.1417 12.5312 10.2646 12.75 10.4834C12.9688 10.7022 13.0917 10.9989 13.0917 11.3083V15.4167H15.4167ZM5.73333 7.13333C6.10464 7.13333 6.46073 6.98583 6.72328 6.72328C6.98583 6.46073 7.13333 6.10464 7.13333 5.73333C7.13333 4.95833 6.50833 4.325 5.73333 4.325C5.35982 4.325 5.0016 4.47338 4.73749 4.73749C4.47338 5.0016 4.325 5.35982 4.325 5.73333C4.325 6.50833 4.95833 7.13333 5.73333 7.13333ZM6.89167 15.4167V8.44167H4.58333V15.4167H6.89167Z" />
+										</svg>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="ab ak sm:a1M/2 lg:a1M/4">
-					<div class="aZ wow fadeInUp a1W au a4c a21 a1v a1f a2G a1G hover:a1H dark:a3" data-wow-delay="0s">
-						<div class="a2a a2c a1i">
-							<img src="images/ios pics/GAURI AGARWAL.webp" alt="team" class="a4d ab" />
-						</div>
-						<div>
-							<h3 class="a2s aO aP a1k dark:aT">Gauri Agarwal</h3>
-							<p class="a2d a1j a1R aQ dark:aS">Vice-President</p>
-							<div class="a1N aa ac a1t a4e">
-								<a href="https://www.instagram.com/_._gauriagarwal" target="_blank" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"
-									name="social-link" aria-label="social-link">
-									<svg class="a1B"
-width="20" height="20"
-viewBox="0 0 30 30">
-    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
-</svg>
-								</a>
-								<a href="https://www.linkedin.com/in/gauri-agarwal-software-developer" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"
-									name="social-link" aria-label="social-link" target="_blank">
-									<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
-										<path
-											d="M15.8333 2.5C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333ZM15.4167 15.4167V11C15.4167 10.2795 15.1304 9.5885 14.621 9.07903C14.1115 8.56955 13.4205 8.28333 12.7 8.28333C11.9917 8.28333 11.1667 8.71667 10.7667 9.36667V8.44167H8.44167V15.4167H10.7667V11.3083C10.7667 10.6667 11.2833 10.1417 11.925 10.1417C12.2344 10.1417 12.5312 10.2646 12.75 10.4834C12.9688 10.7022 13.0917 10.9989 13.0917 11.3083V15.4167H15.4167ZM5.73333 7.13333C6.10464 7.13333 6.46073 6.98583 6.72328 6.72328C6.98583 6.46073 7.13333 6.10464 7.13333 5.73333C7.13333 4.95833 6.50833 4.325 5.73333 4.325C5.35982 4.325 5.0016 4.47338 4.73749 4.73749C4.47338 5.0016 4.325 5.35982 4.325 5.73333C4.325 6.50833 4.95833 7.13333 5.73333 7.13333ZM6.89167 15.4167V8.44167H4.58333V15.4167H6.89167Z" />
-									</svg>
-								</a>
+					<div class="ab ak sm:a1M/2 lg:a1M/4">
+						<div class="aZ wow fadeInUp a1W au a4c a21 a1v a1f a2G a1G hover:a1H dark:a3"
+							data-wow-delay="0s">
+							<div class="a2a a2c a1i">
+								<img src="images/ios pics/GAURI AGARWAL.webp" alt="team" class="a4d ab" />
+							</div>
+							<div>
+								<h3 class="a2s aO aP a1k dark:aT">Gauri Agarwal</h3>
+								<p class="a2d a1j a1R aQ dark:aS">Vice-President</p>
+								<div class="a1N aa ac a1t a4e">
+									<a href="https://www.instagram.com/_._gauriagarwal" target="_blank"
+										class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" name="social-link"
+										aria-label="social-link">
+										<svg class="a1B" width="20" height="20" viewBox="0 0 30 30">
+											<path
+												d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
+											</path>
+										</svg>
+									</a>
+									<a href="https://www.linkedin.com/in/gauri-agarwal-software-developer"
+										class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" name="social-link"
+										aria-label="social-link" target="_blank">
+										<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
+											<path
+												d="M15.8333 2.5C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333ZM15.4167 15.4167V11C15.4167 10.2795 15.1304 9.5885 14.621 9.07903C14.1115 8.56955 13.4205 8.28333 12.7 8.28333C11.9917 8.28333 11.1667 8.71667 10.7667 9.36667V8.44167H8.44167V15.4167H10.7667V11.3083C10.7667 10.6667 11.2833 10.1417 11.925 10.1417C12.2344 10.1417 12.5312 10.2646 12.75 10.4834C12.9688 10.7022 13.0917 10.9989 13.0917 11.3083V15.4167H15.4167ZM5.73333 7.13333C6.10464 7.13333 6.46073 6.98583 6.72328 6.72328C6.98583 6.46073 7.13333 6.10464 7.13333 5.73333C7.13333 4.95833 6.50833 4.325 5.73333 4.325C5.35982 4.325 5.0016 4.47338 4.73749 4.73749C4.47338 5.0016 4.325 5.35982 4.325 5.73333C4.325 6.50833 4.95833 7.13333 5.73333 7.13333ZM6.89167 15.4167V8.44167H4.58333V15.4167H6.89167Z" />
+										</svg>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="ab ak sm:a1M/2 lg:a1M/4">
-					<div class="aZ wow fadeInUp a1W au a4c a21 a1v a1f a2G a1G hover:a1H dark:a3" data-wow-delay="0s">
-						<div class="a2a a2c a1i">
-							<img src="images/ios pics/VITTHAL DUBEY.webp" alt="team" class="a4d ab" />
-						</div>
-						<div>
-							<h3 class="a2s aO aP a1k dark:aT">Vithal Dubey</h3>
-							<p class="a2d a1j a1R aQ dark:aS">Secretary</p>
-							<div class="a1N aa ac a1t a4e">
-								<a href="javascript:void(0)" target="_blank" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"
-									name="social-link" aria-label="social-link">
-									<svg class="a1B"
-width="20" height="20"
-viewBox="0 0 30 30">
-    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
-</svg>
-								</a>
-								<a href="https://www.linkedin.com/in/vitthal-dubey(0)" target="_blank"class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"
-									name="social-link" aria-label="social-link">
-									<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
-										<path
-											d="M15.8333 2.5C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333ZM15.4167 15.4167V11C15.4167 10.2795 15.1304 9.5885 14.621 9.07903C14.1115 8.56955 13.4205 8.28333 12.7 8.28333C11.9917 8.28333 11.1667 8.71667 10.7667 9.36667V8.44167H8.44167V15.4167H10.7667V11.3083C10.7667 10.6667 11.2833 10.1417 11.925 10.1417C12.2344 10.1417 12.5312 10.2646 12.75 10.4834C12.9688 10.7022 13.0917 10.9989 13.0917 11.3083V15.4167H15.4167ZM5.73333 7.13333C6.10464 7.13333 6.46073 6.98583 6.72328 6.72328C6.98583 6.46073 7.13333 6.10464 7.13333 5.73333C7.13333 4.95833 6.50833 4.325 5.73333 4.325C5.35982 4.325 5.0016 4.47338 4.73749 4.73749C4.47338 5.0016 4.325 5.35982 4.325 5.73333C4.325 6.50833 4.95833 7.13333 5.73333 7.13333ZM6.89167 15.4167V8.44167H4.58333V15.4167H6.89167Z" />
-									</svg>
-								</a>
+					<div class="ab ak sm:a1M/2 lg:a1M/4">
+						<div class="aZ wow fadeInUp a1W au a4c a21 a1v a1f a2G a1G hover:a1H dark:a3"
+							data-wow-delay="0s">
+							<div class="a2a a2c a1i">
+								<img src="images/ios pics/VITTHAL DUBEY.webp" alt="team" class="a4d ab" />
+							</div>
+							<div>
+								<h3 class="a2s aO aP a1k dark:aT">Vithal Dubey</h3>
+								<p class="a2d a1j a1R aQ dark:aS">Secretary</p>
+								<div class="a1N aa ac a1t a4e">
+									<a href="javascript:void(0)" target="_blank"
+										class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" name="social-link"
+										aria-label="social-link">
+										<svg class="a1B" width="20" height="20" viewBox="0 0 30 30">
+											<path
+												d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
+											</path>
+										</svg>
+									</a>
+									<a href="https://www.linkedin.com/in/vitthal-dubey(0)" target="_blank"
+										class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" name="social-link"
+										aria-label="social-link">
+										<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
+											<path
+												d="M15.8333 2.5C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333ZM15.4167 15.4167V11C15.4167 10.2795 15.1304 9.5885 14.621 9.07903C14.1115 8.56955 13.4205 8.28333 12.7 8.28333C11.9917 8.28333 11.1667 8.71667 10.7667 9.36667V8.44167H8.44167V15.4167H10.7667V11.3083C10.7667 10.6667 11.2833 10.1417 11.925 10.1417C12.2344 10.1417 12.5312 10.2646 12.75 10.4834C12.9688 10.7022 13.0917 10.9989 13.0917 11.3083V15.4167H15.4167ZM5.73333 7.13333C6.10464 7.13333 6.46073 6.98583 6.72328 6.72328C6.98583 6.46073 7.13333 6.10464 7.13333 5.73333C7.13333 4.95833 6.50833 4.325 5.73333 4.325C5.35982 4.325 5.0016 4.47338 4.73749 4.73749C4.47338 5.0016 4.325 5.35982 4.325 5.73333C4.325 6.50833 4.95833 7.13333 5.73333 7.13333ZM6.89167 15.4167V8.44167H4.58333V15.4167H6.89167Z" />
+										</svg>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="ab ak sm:a1M/2 lg:a1M/4">
-					<div class="aZ wow fadeInUp a1W au a4c a21 a1v a1f a2G a1G hover:a1H dark:a3" data-wow-delay="0s">
-						<div class="a2a a2c a1i">
-							<img src="images/ios pics/MITALI PANCHAL.webp" alt="team" class="a4d ab" />
-						</div>
-						<div>
-							<h3 class="a2s aO aP a1k dark:aT">Mitali Panchal</h3>
-							<p class="a2d a1j a1R aQ dark:aS">Joint Secretary</p>
-							<div class="a1N aa ac a1t a4e">
-								<a href="https://www.instagram.com/_mitalily__"target="_blank" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"
-									name="social-link" aria-label="social-link">
-									<svg class="a1B"
-width="20" height="20"
-viewBox="0 0 30 30">
-    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
-</svg>
-								</a>
-								<a href="https://www.linkedin.com/in/mitali-panchal-121702246"target="_blank" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"
-									name="social-link" aria-label="social-link">
-									<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
-										<path
-											d="M15.8333 2.5C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333ZM15.4167 15.4167V11C15.4167 10.2795 15.1304 9.5885 14.621 9.07903C14.1115 8.56955 13.4205 8.28333 12.7 8.28333C11.9917 8.28333 11.1667 8.71667 10.7667 9.36667V8.44167H8.44167V15.4167H10.7667V11.3083C10.7667 10.6667 11.2833 10.1417 11.925 10.1417C12.2344 10.1417 12.5312 10.2646 12.75 10.4834C12.9688 10.7022 13.0917 10.9989 13.0917 11.3083V15.4167H15.4167ZM5.73333 7.13333C6.10464 7.13333 6.46073 6.98583 6.72328 6.72328C6.98583 6.46073 7.13333 6.10464 7.13333 5.73333C7.13333 4.95833 6.50833 4.325 5.73333 4.325C5.35982 4.325 5.0016 4.47338 4.73749 4.73749C4.47338 5.0016 4.325 5.35982 4.325 5.73333C4.325 6.50833 4.95833 7.13333 5.73333 7.13333ZM6.89167 15.4167V8.44167H4.58333V15.4167H6.89167Z" />
-									</svg>
-								</a>
+					<div class="ab ak sm:a1M/2 lg:a1M/4">
+						<div class="aZ wow fadeInUp a1W au a4c a21 a1v a1f a2G a1G hover:a1H dark:a3"
+							data-wow-delay="0s">
+							<div class="a2a a2c a1i">
+								<img src="images/ios pics/MITALI PANCHAL.webp" alt="team" class="a4d ab" />
+							</div>
+							<div>
+								<h3 class="a2s aO aP a1k dark:aT">Mitali Panchal</h3>
+								<p class="a2d a1j a1R aQ dark:aS">Joint Secretary</p>
+								<div class="a1N aa ac a1t a4e">
+									<a href="https://www.instagram.com/_mitalily__" target="_blank"
+										class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" name="social-link"
+										aria-label="social-link">
+										<svg class="a1B" width="20" height="20" viewBox="0 0 30 30">
+											<path
+												d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
+											</path>
+										</svg>
+									</a>
+									<a href="https://www.linkedin.com/in/mitali-panchal-121702246" target="_blank"
+										class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" name="social-link"
+										aria-label="social-link">
+										<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
+											<path
+												d="M15.8333 2.5C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333ZM15.4167 15.4167V11C15.4167 10.2795 15.1304 9.5885 14.621 9.07903C14.1115 8.56955 13.4205 8.28333 12.7 8.28333C11.9917 8.28333 11.1667 8.71667 10.7667 9.36667V8.44167H8.44167V15.4167H10.7667V11.3083C10.7667 10.6667 11.2833 10.1417 11.925 10.1417C12.2344 10.1417 12.5312 10.2646 12.75 10.4834C12.9688 10.7022 13.0917 10.9989 13.0917 11.3083V15.4167H15.4167ZM5.73333 7.13333C6.10464 7.13333 6.46073 6.98583 6.72328 6.72328C6.98583 6.46073 7.13333 6.10464 7.13333 5.73333C7.13333 4.95833 6.50833 4.325 5.73333 4.325C5.35982 4.325 5.0016 4.47338 4.73749 4.73749C4.47338 5.0016 4.325 5.35982 4.325 5.73333C4.325 6.50833 4.95833 7.13333 5.73333 7.13333ZM6.89167 15.4167V8.44167H4.58333V15.4167H6.89167Z" />
+										</svg>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="ab ak sm:a1M/2 lg:a1M/4">
-					<div class="aZ wow fadeInUp a1W au a4c a21 a1v a1f a2G a1G hover:a1H dark:a3" data-wow-delay="0s">
-						<div class="a2a a2c a1i">
-							<img src="images/ios pics/ALPESH GARG.webp" alt="team" class="a4d ab" />
-						</div>
-						<div>
-							<h3 class="a2s aO aP a1k dark:aT">Alpesh Garg</h3>
-							<p class="a2d a1j a1R aQ dark:aS">Manager</p>
-							
-							<div class="a1N aa ac a1t a4e">
-								<a href="https://www.instagram.com/_alpesh_garg"target="_blank" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"
-									name="social-link" aria-label="social-link">
-									<svg class="a1B"
-width="20" height="20"
-viewBox="0 0 30 30">
-    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
-</svg>
-								</a>
-								<a href="https://www.linkedin.com/in/alpesh-garg-963264225" target="_blank" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"
-									name="social-link" aria-label="social-link">
-									<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
-										<path
-											d="M15.8333 2.5C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333ZM15.4167 15.4167V11C15.4167 10.2795 15.1304 9.5885 14.621 9.07903C14.1115 8.56955 13.4205 8.28333 12.7 8.28333C11.9917 8.28333 11.1667 8.71667 10.7667 9.36667V8.44167H8.44167V15.4167H10.7667V11.3083C10.7667 10.6667 11.2833 10.1417 11.925 10.1417C12.2344 10.1417 12.5312 10.2646 12.75 10.4834C12.9688 10.7022 13.0917 10.9989 13.0917 11.3083V15.4167H15.4167ZM5.73333 7.13333C6.10464 7.13333 6.46073 6.98583 6.72328 6.72328C6.98583 6.46073 7.13333 6.10464 7.13333 5.73333C7.13333 4.95833 6.50833 4.325 5.73333 4.325C5.35982 4.325 5.0016 4.47338 4.73749 4.73749C4.47338 5.0016 4.325 5.35982 4.325 5.73333C4.325 6.50833 4.95833 7.13333 5.73333 7.13333ZM6.89167 15.4167V8.44167H4.58333V15.4167H6.89167Z" />
-									</svg>
-								</a>
+					<div class="ab ak sm:a1M/2 lg:a1M/4">
+						<div class="aZ wow fadeInUp a1W au a4c a21 a1v a1f a2G a1G hover:a1H dark:a3"
+							data-wow-delay="0s">
+							<div class="a2a a2c a1i">
+								<img src="images/ios pics/ALPESH GARG.webp" alt="team" class="a4d ab" />
+							</div>
+							<div>
+								<h3 class="a2s aO aP a1k dark:aT">Alpesh Garg</h3>
+								<p class="a2d a1j a1R aQ dark:aS">Manager</p>
+
+								<div class="a1N aa ac a1t a4e">
+									<a href="https://www.instagram.com/_alpesh_garg" target="_blank"
+										class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" name="social-link"
+										aria-label="social-link">
+										<svg class="a1B" width="20" height="20" viewBox="0 0 30 30">
+											<path
+												d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
+											</path>
+										</svg>
+									</a>
+									<a href="https://www.linkedin.com/in/alpesh-garg-963264225" target="_blank"
+										class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" name="social-link"
+										aria-label="social-link">
+										<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
+											<path
+												d="M15.8333 2.5C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333ZM15.4167 15.4167V11C15.4167 10.2795 15.1304 9.5885 14.621 9.07903C14.1115 8.56955 13.4205 8.28333 12.7 8.28333C11.9917 8.28333 11.1667 8.71667 10.7667 9.36667V8.44167H8.44167V15.4167H10.7667V11.3083C10.7667 10.6667 11.2833 10.1417 11.925 10.1417C12.2344 10.1417 12.5312 10.2646 12.75 10.4834C12.9688 10.7022 13.0917 10.9989 13.0917 11.3083V15.4167H15.4167ZM5.73333 7.13333C6.10464 7.13333 6.46073 6.98583 6.72328 6.72328C6.98583 6.46073 7.13333 6.10464 7.13333 5.73333C7.13333 4.95833 6.50833 4.325 5.73333 4.325C5.35982 4.325 5.0016 4.47338 4.73749 4.73749C4.47338 5.0016 4.325 5.35982 4.325 5.73333C4.325 6.50833 4.95833 7.13333 5.73333 7.13333ZM6.89167 15.4167V8.44167H4.58333V15.4167H6.89167Z" />
+										</svg>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="ab ak sm:a1M/2 lg:a1M/4">
-					<div class="aZ wow fadeInUp a1W au a4c a21 a1v a1f a2G a1G hover:a1H dark:a3" data-wow-delay="0s">
-						<div class="a2a a2c a1i">
-							<img src="images/ios pics/PRANJUL DWIVEDI.webp" alt="team" class="a4d ab" />
-						</div>
-						<div>
-							<h3 class="a2s aO aP a1k dark:aT">Pranjul Dwivedi</h3>
-							<p class="a2d a1j a1R aQ dark:aS">Chairman</p>
-							<div class="a1N aa ac a1t a4e">
-								<a href="https://www.instagram.com/___.pranjul" target="_blank" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"
-									name="social-link" aria-label="social-link">
-									<svg class="a1B"
-width="20" height="20"
-viewBox="0 0 30 30">
-    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
-</svg>
-								</a>
-								<a href="https://www.linkedin.com/in/pranjul-dwivedi" target="_blank" class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR"
-									name="social-link" aria-label="social-link">
-									<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
-										<path
-											d="M15.8333 2.5C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333ZM15.4167 15.4167V11C15.4167 10.2795 15.1304 9.5885 14.621 9.07903C14.1115 8.56955 13.4205 8.28333 12.7 8.28333C11.9917 8.28333 11.1667 8.71667 10.7667 9.36667V8.44167H8.44167V15.4167H10.7667V11.3083C10.7667 10.6667 11.2833 10.1417 11.925 10.1417C12.2344 10.1417 12.5312 10.2646 12.75 10.4834C12.9688 10.7022 13.0917 10.9989 13.0917 11.3083V15.4167H15.4167ZM5.73333 7.13333C6.10464 7.13333 6.46073 6.98583 6.72328 6.72328C6.98583 6.46073 7.13333 6.10464 7.13333 5.73333C7.13333 4.95833 6.50833 4.325 5.73333 4.325C5.35982 4.325 5.0016 4.47338 4.73749 4.73749C4.47338 5.0016 4.325 5.35982 4.325 5.73333C4.325 6.50833 4.95833 7.13333 5.73333 7.13333ZM6.89167 15.4167V8.44167H4.58333V15.4167H6.89167Z" />
-									</svg>
-								</a>
+					<div class="ab ak sm:a1M/2 lg:a1M/4">
+						<div class="aZ wow fadeInUp a1W au a4c a21 a1v a1f a2G a1G hover:a1H dark:a3"
+							data-wow-delay="0s">
+							<div class="a2a a2c a1i">
+								<img src="images/ios pics/PRANJUL DWIVEDI.webp" alt="team" class="a4d ab" />
+							</div>
+							<div>
+								<h3 class="a2s aO aP a1k dark:aT">Pranjul Dwivedi</h3>
+								<p class="a2d a1j a1R aQ dark:aS">Chairman</p>
+								<div class="a1N aa ac a1t a4e">
+									<a href="https://www.instagram.com/___.pranjul" target="_blank"
+										class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" name="social-link"
+										aria-label="social-link">
+										<svg class="a1B" width="20" height="20" viewBox="0 0 30 30">
+											<path
+												d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
+											</path>
+										</svg>
+									</a>
+									<a href="https://www.linkedin.com/in/pranjul-dwivedi" target="_blank"
+										class="a2Q[#B6BFC9] hover:aR dark:aT dark:hover:aR" name="social-link"
+										aria-label="social-link">
+										<svg width="20" height="20" viewBox="0 0 20 20" class="a1B">
+											<path
+												d="M15.8333 2.5C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333ZM15.4167 15.4167V11C15.4167 10.2795 15.1304 9.5885 14.621 9.07903C14.1115 8.56955 13.4205 8.28333 12.7 8.28333C11.9917 8.28333 11.1667 8.71667 10.7667 9.36667V8.44167H8.44167V15.4167H10.7667V11.3083C10.7667 10.6667 11.2833 10.1417 11.925 10.1417C12.2344 10.1417 12.5312 10.2646 12.75 10.4834C12.9688 10.7022 13.0917 10.9989 13.0917 11.3083V15.4167H15.4167ZM5.73333 7.13333C6.10464 7.13333 6.46073 6.98583 6.72328 6.72328C6.98583 6.46073 7.13333 6.10464 7.13333 5.73333C7.13333 4.95833 6.50833 4.325 5.73333 4.325C5.35982 4.325 5.0016 4.47338 4.73749 4.73749C4.47338 5.0016 4.325 5.35982 4.325 5.73333C4.325 6.50833 4.95833 7.13333 5.73333 7.13333ZM6.89167 15.4167V8.44167H4.58333V15.4167H6.89167Z" />
+										</svg>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<br>
-				<br>
-			</div>
-		</div>
-	</section>
-	<!-- Start Chart Of Memebers -->
-<br><br>
-	<section class="af a2E">
-		<div class="ae">
-			<div class="au a1v a3O a1E dark:a1w[#14102C] sm:a3P sm:a3Q lg:a1E xl:a3Q">
-				<div class="ag aa a1L ac">
-					<div class="ab ak lg:a1M/2">
-						<div class="wow fadeInUp a3R aa ac a1t lg:a1Q" data-wow-delay="0s">
-							<div id="chart"></div>
-						</div>
-					</div>
-					<div class="ab ak lg:a1M/2">
-						<div class="wow fadeInUp a3S" data-wow-delay="0s">
-							<h2 class="a2d a2o a1P a2p a1k dark:aT md:a2Q[45px]">
-								Core Team Members
-							</h2>
-							<p class="aO a1R aQ dark:aS">
-								iOS Club has a total of 58 Members in 10 different teams divided on the
-								basis of tasks they perform.
-							</p>
-						</div>
-						<div class="wow fadeInUp a3T" data-wow-delay="0s">
-
-							<p class="aa">
-								<span class="a1p a3U a3V a1u a1w[#2347B9]"></span>
-								<span class="aO a1R aQ dark:aS"> Content Team : 5 Members </span>
-							</p>
-							<p class="aa">
-								<span class="a1p a3U a3V a1u a1w[#3363FF]"></span>
-								<span class="aO a1R aQ dark:aS">
-									Technical Teams : 6 Members
-								</span>
-							</p>
-							<p class="aa">
-								<span class="a1p a3U a3V a1u a1w[#8BA6FF]"></span>
-								<span class="aO a1R aQ dark:aS"> Developer Team : 5 Members </span>
-							</p>
-							<p class="aa">
-								<span class="a1p a3U a3V a1u a1w[#8696CA]"></span>
-								<span class="aO a1R aQ dark:aS">
-									Event Team : 10 Members
-								</span>
-							</p>
-
-							<p class="aa">
-								<span class="a1p a3U a3V a1u a1w[#8093F1]"></span>
-								<span class="aO a1R aQ dark:aS">
-									Design Team : 5 Members
-								</span>
-							</p>
-
-							<p class="aa">
-								<span class="a1p a3U a3V a1u a1w[#2589BD]"></span>
-								<span class="aO a1R aQ dark:aS">
-									Video Editing Team : 4 Members
-								</span>
-							</p>
-
-							<p class="aa">
-								<span class="a1p a3U a3V a1u a1w[#3E92EC]"></span>
-								<span class="aO a1R aQ dark:aS">
-									Photo & Videography Team : 4 Members
-								</span>
-							</p>
-
-							<p class="aa">
-								<span class="a1p a3U a3V a1u a1w[#2B9AA3]"></span>
-								<span class="aO a1R aQ dark:aS">
-									PR Team : 7 Members
-								</span>
-							</p>
-
-							<p class="aa">
-								<span class="a1p a3U a3V a1u a1w[#99E6FF]"></span>
-								<span class="aO a1R aQ dark:aS">
-									Social Marketing Team : 8 Members
-								</span>
-							</p>
-							<p class="aa">
-								<span class="a1p a3U a3V a1u a1w[#907ADD]"></span>
-								<span class="aO a1R aQ dark:aS">
-									Achoring Team : 4 Members
-								</span>
-							</p>
-
-						</div>
-					</div>
+					<br>
+					<br>
 				</div>
 			</div>
-		</div>
-		<div class="aq a19 a3W a2Z">
-			<img src="images/shapes/token-sale-shape.svg" alt="shape" />
-		</div>
-	</section>
-	<br>
-	<!-- End Chart OF Members-->
+		</section>
+		<!-- Start Chart Of Memebers -->
+		<br><br>
+		<section class="af a2E">
+			<div class="ae">
+				<div class="au a1v a3O a1E dark:a1w[#14102C] sm:a3P sm:a3Q lg:a1E xl:a3Q">
+					<div class="ag aa a1L ac">
+						<div class="ab ak lg:a1M/2">
+							<div class="wow fadeInUp a3R aa ac a1t lg:a1Q" data-wow-delay="0s">
+								<div id="chart"></div>
+							</div>
+						</div>
+						<div class="ab ak lg:a1M/2">
+							<div class="wow fadeInUp a3S" data-wow-delay="0s">
+								<h2 class="a2d a2o a1P a2p a1k dark:aT md:a2Q[45px]">
+									Core Team Members
+								</h2>
+								<p class="aO a1R aQ dark:aS">
+									iOS Club has a total of 58 Members in 10 different teams divided on the
+									basis of tasks they perform.
+								</p>
+							</div>
+							<div class="wow fadeInUp a3T" data-wow-delay="0s">
 
-	<!--
+								<p class="aa">
+									<span class="a1p a3U a3V a1u a1w[#2347B9]"></span>
+									<span class="aO a1R aQ dark:aS"> Content Team : 5 Members </span>
+								</p>
+								<p class="aa">
+									<span class="a1p a3U a3V a1u a1w[#3363FF]"></span>
+									<span class="aO a1R aQ dark:aS">
+										Technical Teams : 6 Members
+									</span>
+								</p>
+								<p class="aa">
+									<span class="a1p a3U a3V a1u a1w[#8BA6FF]"></span>
+									<span class="aO a1R aQ dark:aS"> Developer Team : 5 Members </span>
+								</p>
+								<p class="aa">
+									<span class="a1p a3U a3V a1u a1w[#8696CA]"></span>
+									<span class="aO a1R aQ dark:aS">
+										Event Team : 10 Members
+									</span>
+								</p>
+
+								<p class="aa">
+									<span class="a1p a3U a3V a1u a1w[#8093F1]"></span>
+									<span class="aO a1R aQ dark:aS">
+										Design Team : 5 Members
+									</span>
+								</p>
+
+								<p class="aa">
+									<span class="a1p a3U a3V a1u a1w[#2589BD]"></span>
+									<span class="aO a1R aQ dark:aS">
+										Video Editing Team : 4 Members
+									</span>
+								</p>
+
+								<p class="aa">
+									<span class="a1p a3U a3V a1u a1w[#3E92EC]"></span>
+									<span class="aO a1R aQ dark:aS">
+										Photo & Videography Team : 4 Members
+									</span>
+								</p>
+
+								<p class="aa">
+									<span class="a1p a3U a3V a1u a1w[#2B9AA3]"></span>
+									<span class="aO a1R aQ dark:aS">
+										PR Team : 7 Members
+									</span>
+								</p>
+
+								<p class="aa">
+									<span class="a1p a3U a3V a1u a1w[#99E6FF]"></span>
+									<span class="aO a1R aQ dark:aS">
+										Social Marketing Team : 8 Members
+									</span>
+								</p>
+								<p class="aa">
+									<span class="a1p a3U a3V a1u a1w[#907ADD]"></span>
+									<span class="aO a1R aQ dark:aS">
+										Achoring Team : 4 Members
+									</span>
+								</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="aq a19 a3W a2Z">
+				<img src="images/shapes/token-sale-shape.svg" alt="shape" />
+			</div>
+		</section>
+		<br>
+		<!-- End Chart OF Members-->
+
+		<!--
 		<section id="testimonial" class="a1v a1J[120px] a1T dark:a1w[#14102C]">
 			<div class="ae">
 				<div
@@ -2013,7 +2045,7 @@ viewBox="0 0 30 30">
 			</div>
 		</section>
 	-->
-	<!--
+		<!--
 		<section
 			id="faq"
 			x-data="
@@ -2258,7 +2290,7 @@ viewBox="0 0 30 30">
 			</div>
 		</section>
 	-->
-	<!--
+		<!--
 		<section id="blog" class="a1J[120px] a1T">
 			<div class="ae">
 				<div
@@ -2459,130 +2491,131 @@ viewBox="0 0 30 30">
 			</div>
 		</section>
 	-->
-	<section id="contact" class="a1v aw[120px] dark:a1w[#14102C]">
-		<div class="ae">
-			<div class="ag aa a1L ac">
-				<div class="ab ak lg:a4v/12">
-					<div class="wow fadeInUp a3K aH[350px]" data-wow-delay="0s">
-						<span class="a2d aO a1P a3L aR sm:a1O"> Contact Us </span>
-						<h2 class="a2d a2o a1P a2p a1k dark:aT md:a2Q[90px]">
-							Let's Know Each Other Better.
-						</h2>
-					</div>
-					<div class="ag aa a1L">
-						<div class="ab ak sm:a1M/2">
-							<div class="wow fadeInUp a4w aH[250px]" data-wow-delay="0s">
-								<h3 class="a1N aO aP a2u dark:aT">Our Location</h3>
-								<p class="a1F a1R a4u aQ dark:aS">
-									VIT Bhopal University, Sehore District, Bhopal - 466114
-								</p>
-							</div>
+		<section id="contact" class="a1v aw[120px] dark:a1w[#14102C]">
+			<div class="ae">
+				<div class="ag aa a1L ac">
+					<div class="ab ak lg:a4v/12">
+						<div class="wow fadeInUp a3K aH[350px]" data-wow-delay="0s">
+							<span class="a2d aO a1P a3L aR sm:a1O"> Contact Us </span>
+							<h2 class="a2d a2o a1P a2p a1k dark:aT md:a2Q[90px]">
+								Let's Know Each Other Better.
+							</h2>
 						</div>
-						<div class="ab ak sm:a1M/2">
-							<div class="wow fadeInUp a4w aH[250px]" data-wow-delay="0s">
-								<h3 class="a1N aO aP a2u dark:aT">Email Address</h3>
-								<p class="a1F a1R a4u aQ dark:aS">
-									<a href="mailto:iosclubvitb@gmail.com">
-										iosclubvitb@gmail.com
-									</a>
-								</p>
-
+						<div class="ag aa a1L">
+							<div class="ab ak sm:a1M/2">
+								<div class="wow fadeInUp a4w aH[250px]" data-wow-delay="0s">
+									<h3 class="a1N aO aP a2u dark:aT">Our Location</h3>
+									<p class="a1F a1R a4u aQ dark:aS">
+										VIT Bhopal University, Sehore District, Bhopal - 466114
+									</p>
+								</div>
 							</div>
-						</div>
-						<div class="ab ak sm:a1M/2">
-							<div class="wow fadeInUp a4w aH[250px]" data-wow-delay="0s">
-								<h3 class="a1N aO aP a2u dark:aT">Phone Number</h3>
-								<p class="a1F a1R a4u aQ dark:aS"><a href="tel:8949598380">+91 89495 98380</a><br><a
-										href="tel:9455594028">+91 94555 94028</a></p>
+							<div class="ab ak sm:a1M/2">
+								<div class="wow fadeInUp a4w aH[250px]" data-wow-delay="0s">
+									<h3 class="a1N aO aP a2u dark:aT">Email Address</h3>
+									<p class="a1F a1R a4u aQ dark:aS">
+										<a href="mailto:iosclubvitb@gmail.com">
+											iosclubvitb@gmail.com
+										</a>
+									</p>
+
+								</div>
 							</div>
-						</div>
+							<div class="ab ak sm:a1M/2">
+								<div class="wow fadeInUp a4w aH[250px]" data-wow-delay="0s">
+									<h3 class="a1N aO aP a2u dark:aT">Phone Number</h3>
+									<p class="a1F a1R a4u aQ dark:aS"><a href="tel:8949598380">+91 89495 98380</a><br><a
+											href="tel:9455594028">+91 94555 94028</a></p>
+								</div>
+							</div>
 
-						<div class="ab ak sm:a1M/2">
-							<div class="wow fadeInUp a4w aH[250px]" data-wow-delay="0s">
-								<h3 class="a1N aO aP a2u dark:aT">Social Links</h3>
-								<p class="a1F a1R a4u aQ dark:aS">
+							<div class="ab ak sm:a1M/2">
+								<div class="wow fadeInUp a4w aH[250px]" data-wow-delay="0s">
+									<h3 class="a1N aO aP a2u dark:aT">Social Links</h3>
+									<p class="a1F a1R a4u aQ dark:aS">
 
-									<div class="aa ac a31">
-										<a href="https://www.instagram.com/iosclub_vitb/"
-											class="aa a32 a33 ac a1t a1u a1v aQ hover:a1A hover:aT dark:a3 dark:aT dark:hover:a1A"
-											name="social-link" aria-label="social-link">
-											<svg class="a1B" width="18" height="18" viewBox="0 0 30 30">
-												<path
-													d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
-												</path>
-											</svg>
-
-											<a href="https://chat.whatsapp.com/FXI1WeGjcI99n1Fk3p70Uo"
+										<div class="aa ac a31">
+											<a href="https://www.instagram.com/iosclub_vitb/"
 												class="aa a32 a33 ac a1t a1u a1v aQ hover:a1A hover:aT dark:a3 dark:aT dark:hover:a1A"
-												name="social-link" aria-label="social-link" target="__blank">
+												name="social-link" aria-label="social-link">
 												<svg class="a1B" width="18" height="18" viewBox="0 0 30 30">
 													<path
-														d="M 15 3 C 8.373 3 3 8.373 3 15 C 3 17.251208 3.6323415 19.350068 4.7109375 21.150391 L 3.1074219 27 L 9.0820312 25.431641 C 10.829354 26.425062 12.84649 27 15 27 C 21.627 27 27 21.627 27 15 C 27 8.373 21.627 3 15 3 z M 10.892578 9.4023438 C 11.087578 9.4023438 11.287937 9.4011562 11.460938 9.4101562 C 11.674938 9.4151563 11.907859 9.4308281 12.130859 9.9238281 C 12.395859 10.509828 12.972875 11.979906 13.046875 12.128906 C 13.120875 12.277906 13.173313 12.453437 13.070312 12.648438 C 12.972312 12.848437 12.921344 12.969484 12.777344 13.146484 C 12.628344 13.318484 12.465078 13.532109 12.330078 13.662109 C 12.181078 13.811109 12.027219 13.974484 12.199219 14.271484 C 12.371219 14.568484 12.968563 15.542125 13.851562 16.328125 C 14.986562 17.342125 15.944188 17.653734 16.242188 17.802734 C 16.540187 17.951734 16.712766 17.928516 16.884766 17.728516 C 17.061766 17.533516 17.628125 16.864406 17.828125 16.566406 C 18.023125 16.268406 18.222188 16.319969 18.492188 16.417969 C 18.766188 16.515969 20.227391 17.235766 20.525391 17.384766 C 20.823391 17.533766 21.01875 17.607516 21.09375 17.728516 C 21.17075 17.853516 21.170828 18.448578 20.923828 19.142578 C 20.676828 19.835578 19.463922 20.505734 18.919922 20.552734 C 18.370922 20.603734 17.858562 20.7995 15.351562 19.8125 C 12.327563 18.6215 10.420484 15.524219 10.271484 15.324219 C 10.122484 15.129219 9.0605469 13.713906 9.0605469 12.253906 C 9.0605469 10.788906 9.8286563 10.071437 10.097656 9.7734375 C 10.371656 9.4754375 10.692578 9.4023438 10.892578 9.4023438 z">
+														d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
 													</path>
 												</svg>
-											</a>
 
-											<a href="https://www.linkedin.com/company/ios-club-vit-bhopal"
-												class="aa a32 a33 ac a1t a1u a1v aQ hover:a1A hover:aT dark:a3 dark:aT dark:hover:a1A"
-												name="social-link" aria-label="social-link">
-												<svg width="16" height="16" viewBox="0 0 16 16" class="a1B">
-													<path
-														d="M13.8333 0.5C14.2754 0.5 14.6993 0.675595 15.0118 0.988155C15.3244 1.30072 15.5 1.72464 15.5 2.16667V13.8333C15.5 14.2754 15.3244 14.6993 15.0118 15.0118C14.6993 15.3244 14.2754 15.5 13.8333 15.5H2.16667C1.72464 15.5 1.30072 15.3244 0.988155 15.0118C0.675595 14.6993 0.5 14.2754 0.5 13.8333V2.16667C0.5 1.72464 0.675595 1.30072 0.988155 0.988155C1.30072 0.675595 1.72464 0.5 2.16667 0.5H13.8333ZM13.4167 13.4167V9C13.4167 8.27949 13.1304 7.5885 12.621 7.07903C12.1115 6.56955 11.4205 6.28333 10.7 6.28333C9.99167 6.28333 9.16667 6.71667 8.76667 7.36667V6.44167H6.44167V13.4167H8.76667V9.30833C8.76667 8.66667 9.28333 8.14167 9.925 8.14167C10.2344 8.14167 10.5312 8.26458 10.75 8.48338C10.9688 8.70217 11.0917 8.99891 11.0917 9.30833V13.4167H13.4167ZM3.73333 5.13333C4.10464 5.13333 4.46073 4.98583 4.72328 4.72328C4.98583 4.46073 5.13333 4.10464 5.13333 3.73333C5.13333 2.95833 4.50833 2.325 3.73333 2.325C3.35982 2.325 3.0016 2.47338 2.73749 2.73749C2.47338 3.0016 2.325 3.35982 2.325 3.73333C2.325 4.50833 2.95833 5.13333 3.73333 5.13333ZM4.89167 13.4167V6.44167H2.58333V13.4167H4.89167Z" />
-												</svg>
-											</a>
-											<a href="https://www.youtube.com/channel/UCqUYjA1pjpdrDFJDzTb45PA"
-												class="aa a32 a33 ac a1t a1u a1v aQ hover:a1A hover:aT dark:a3 dark:aT dark:hover:a1A"
-												name="social-link" aria-label="social-link">
-												<svg width="18" height="12" viewBox="0 0 18 12" class="a1B">
-													<path
-														d="M7.33366 8.49984L11.6587 5.99984L7.33366 3.49984V8.49984ZM16.967 1.97484C17.0753 2.3665 17.1503 2.8915 17.2003 3.55817C17.2587 4.22484 17.2837 4.79984 17.2837 5.29984L17.3337 5.99984C17.3337 7.82484 17.2003 9.1665 16.967 10.0248C16.7587 10.7748 16.2753 11.2582 15.5253 11.4665C15.1337 11.5748 14.417 11.6498 13.317 11.6998C12.2337 11.7582 11.242 11.7832 10.3253 11.7832L9.00033 11.8332C5.50866 11.8332 3.33366 11.6998 2.47533 11.4665C1.72533 11.2582 1.24199 10.7748 1.03366 10.0248C0.925326 9.63317 0.850326 9.10817 0.800326 8.44151C0.741992 7.77484 0.716992 7.19984 0.716992 6.69984L0.666992 5.99984C0.666992 4.17484 0.800326 2.83317 1.03366 1.97484C1.24199 1.22484 1.72533 0.741504 2.47533 0.533171C2.86699 0.424837 3.58366 0.349837 4.68366 0.299837C5.76699 0.241504 6.75866 0.216504 7.67533 0.216504L9.00033 0.166504C12.492 0.166504 14.667 0.299837 15.5253 0.533171C16.2753 0.741504 16.7587 1.22484 16.967 1.97484Z" />
-												</svg>
-											</a>
-									</div>
-								</p>
+												<a href="https://chat.whatsapp.com/FXI1WeGjcI99n1Fk3p70Uo"
+													class="aa a32 a33 ac a1t a1u a1v aQ hover:a1A hover:aT dark:a3 dark:aT dark:hover:a1A"
+													name="social-link" aria-label="social-link" target="__blank">
+													<svg class="a1B" width="18" height="18" viewBox="0 0 30 30">
+														<path
+															d="M 15 3 C 8.373 3 3 8.373 3 15 C 3 17.251208 3.6323415 19.350068 4.7109375 21.150391 L 3.1074219 27 L 9.0820312 25.431641 C 10.829354 26.425062 12.84649 27 15 27 C 21.627 27 27 21.627 27 15 C 27 8.373 21.627 3 15 3 z M 10.892578 9.4023438 C 11.087578 9.4023438 11.287937 9.4011562 11.460938 9.4101562 C 11.674938 9.4151563 11.907859 9.4308281 12.130859 9.9238281 C 12.395859 10.509828 12.972875 11.979906 13.046875 12.128906 C 13.120875 12.277906 13.173313 12.453437 13.070312 12.648438 C 12.972312 12.848437 12.921344 12.969484 12.777344 13.146484 C 12.628344 13.318484 12.465078 13.532109 12.330078 13.662109 C 12.181078 13.811109 12.027219 13.974484 12.199219 14.271484 C 12.371219 14.568484 12.968563 15.542125 13.851562 16.328125 C 14.986562 17.342125 15.944188 17.653734 16.242188 17.802734 C 16.540187 17.951734 16.712766 17.928516 16.884766 17.728516 C 17.061766 17.533516 17.628125 16.864406 17.828125 16.566406 C 18.023125 16.268406 18.222188 16.319969 18.492188 16.417969 C 18.766188 16.515969 20.227391 17.235766 20.525391 17.384766 C 20.823391 17.533766 21.01875 17.607516 21.09375 17.728516 C 21.17075 17.853516 21.170828 18.448578 20.923828 19.142578 C 20.676828 19.835578 19.463922 20.505734 18.919922 20.552734 C 18.370922 20.603734 17.858562 20.7995 15.351562 19.8125 C 12.327563 18.6215 10.420484 15.524219 10.271484 15.324219 C 10.122484 15.129219 9.0605469 13.713906 9.0605469 12.253906 C 9.0605469 10.788906 9.8286563 10.071437 10.097656 9.7734375 C 10.371656 9.4754375 10.692578 9.4023438 10.892578 9.4023438 z">
+														</path>
+													</svg>
+												</a>
+
+												<a href="https://www.linkedin.com/company/ios-club-vit-bhopal"
+													class="aa a32 a33 ac a1t a1u a1v aQ hover:a1A hover:aT dark:a3 dark:aT dark:hover:a1A"
+													name="social-link" aria-label="social-link">
+													<svg width="16" height="16" viewBox="0 0 16 16" class="a1B">
+														<path
+															d="M13.8333 0.5C14.2754 0.5 14.6993 0.675595 15.0118 0.988155C15.3244 1.30072 15.5 1.72464 15.5 2.16667V13.8333C15.5 14.2754 15.3244 14.6993 15.0118 15.0118C14.6993 15.3244 14.2754 15.5 13.8333 15.5H2.16667C1.72464 15.5 1.30072 15.3244 0.988155 15.0118C0.675595 14.6993 0.5 14.2754 0.5 13.8333V2.16667C0.5 1.72464 0.675595 1.30072 0.988155 0.988155C1.30072 0.675595 1.72464 0.5 2.16667 0.5H13.8333ZM13.4167 13.4167V9C13.4167 8.27949 13.1304 7.5885 12.621 7.07903C12.1115 6.56955 11.4205 6.28333 10.7 6.28333C9.99167 6.28333 9.16667 6.71667 8.76667 7.36667V6.44167H6.44167V13.4167H8.76667V9.30833C8.76667 8.66667 9.28333 8.14167 9.925 8.14167C10.2344 8.14167 10.5312 8.26458 10.75 8.48338C10.9688 8.70217 11.0917 8.99891 11.0917 9.30833V13.4167H13.4167ZM3.73333 5.13333C4.10464 5.13333 4.46073 4.98583 4.72328 4.72328C4.98583 4.46073 5.13333 4.10464 5.13333 3.73333C5.13333 2.95833 4.50833 2.325 3.73333 2.325C3.35982 2.325 3.0016 2.47338 2.73749 2.73749C2.47338 3.0016 2.325 3.35982 2.325 3.73333C2.325 4.50833 2.95833 5.13333 3.73333 5.13333ZM4.89167 13.4167V6.44167H2.58333V13.4167H4.89167Z" />
+													</svg>
+												</a>
+												<a href="https://www.youtube.com/channel/UCqUYjA1pjpdrDFJDzTb45PA"
+													class="aa a32 a33 ac a1t a1u a1v aQ hover:a1A hover:aT dark:a3 dark:aT dark:hover:a1A"
+													name="social-link" aria-label="social-link">
+													<svg width="18" height="12" viewBox="0 0 18 12" class="a1B">
+														<path
+															d="M7.33366 8.49984L11.6587 5.99984L7.33366 3.49984V8.49984ZM16.967 1.97484C17.0753 2.3665 17.1503 2.8915 17.2003 3.55817C17.2587 4.22484 17.2837 4.79984 17.2837 5.29984L17.3337 5.99984C17.3337 7.82484 17.2003 9.1665 16.967 10.0248C16.7587 10.7748 16.2753 11.2582 15.5253 11.4665C15.1337 11.5748 14.417 11.6498 13.317 11.6998C12.2337 11.7582 11.242 11.7832 10.3253 11.7832L9.00033 11.8332C5.50866 11.8332 3.33366 11.6998 2.47533 11.4665C1.72533 11.2582 1.24199 10.7748 1.03366 10.0248C0.925326 9.63317 0.850326 9.10817 0.800326 8.44151C0.741992 7.77484 0.716992 7.19984 0.716992 6.69984L0.666992 5.99984C0.666992 4.17484 0.800326 2.83317 1.03366 1.97484C1.24199 1.22484 1.72533 0.741504 2.47533 0.533171C2.86699 0.424837 3.58366 0.349837 4.68366 0.299837C5.76699 0.241504 6.75866 0.216504 7.67533 0.216504L9.00033 0.166504C12.492 0.166504 14.667 0.299837 15.5253 0.533171C16.2753 0.741504 16.7587 1.22484 16.967 1.97484Z" />
+													</svg>
+												</a>
+										</div>
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="ab ak lg:a4x/12">
-					<div class="sm:a4y wow fadeInUp a1X a1 a3O a1E dark:a3" data-wow-delay="0s">
-						<h3 class="a2n a2B a1P a2u dark:aT sm:a2Q[34px] lg:a2B xl:a2Q[34px]">
-							Send us a Message
-						</h3>
-						<form>
-							<div class="a2K">
-								<label for="name" class="a2s an a1j a1R a2u dark:aT">
-									Full Name*
-								</label>
-								<input type="text" id="name" placeholder="Enter your full name"
-									class="ab a1X a1C a2l[#E9E9E9] a4z a22 a23 a1F a1R aS a24 focus:a1H dark:a4A dark:a1 dark:a4B" />
-							</div>
-							<div class="a2K">
-								<label for="email" class="a2s an a1j a1R a2u dark:aT">
-									Email Address*
-								</label>
-								<input type="email" id="email" placeholder="Enter your email address"
-									class="ab a1X a1C a2l[#E9E9E9] a4z a22 a23 a1F a1R aS a24 focus:a1H dark:a4A dark:a1 dark:a4B" />
-							</div>
-							<div class="a2K">
-								<label for="message" class="a2s an a1j a1R a2u dark:aT">
-									Message*
-								</label>
-								<textarea rows="6" id="message" placeholder="Type your message"
-									class="ab a1X a1C a2l[#E9E9E9] a4z a22 a23 a1F a1R aS a24 focus:a1H dark:a4A dark:a1 dark:a4B"></textarea>
-							</div>
-							<div>
-								<button class="ab a1u a1A a4C a2G a1F aP aT hover:a2X dark:a1 dark:a1k dark:hover:a2X">
-									Send Message
-								</button>
-							</div>
-						</form>
+					<div class="ab ak lg:a4x/12">
+						<div class="sm:a4y wow fadeInUp a1X a1 a3O a1E dark:a3" data-wow-delay="0s">
+							<h3 class="a2n a2B a1P a2u dark:aT sm:a2Q[34px] lg:a2B xl:a2Q[34px]">
+								Send us a Message
+							</h3>
+							<form>
+								<div class="a2K">
+									<label for="name" class="a2s an a1j a1R a2u dark:aT">
+										Full Name*
+									</label>
+									<input type="text" id="name" placeholder="Enter your full name"
+										class="ab a1X a1C a2l[#E9E9E9] a4z a22 a23 a1F a1R aS a24 focus:a1H dark:a4A dark:a1 dark:a4B" />
+								</div>
+								<div class="a2K">
+									<label for="email" class="a2s an a1j a1R a2u dark:aT">
+										Email Address*
+									</label>
+									<input type="email" id="email" placeholder="Enter your email address"
+										class="ab a1X a1C a2l[#E9E9E9] a4z a22 a23 a1F a1R aS a24 focus:a1H dark:a4A dark:a1 dark:a4B" />
+								</div>
+								<div class="a2K">
+									<label for="message" class="a2s an a1j a1R a2u dark:aT">
+										Message*
+									</label>
+									<textarea rows="6" id="message" placeholder="Type your message"
+										class="ab a1X a1C a2l[#E9E9E9] a4z a22 a23 a1F a1R aS a24 focus:a1H dark:a4A dark:a1 dark:a4B"></textarea>
+								</div>
+								<div>
+									<button
+										class="ab a1u a1A a4C a2G a1F aP aT hover:a2X dark:a1 dark:a1k dark:hover:a2X">
+										Send Message
+									</button>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<!--
+		</section>
+		<!--
 		<section id="newsletter" class="af a2E">
 			<div class="aq a8 a1a a2Z aC[120px] ab a1v dark:a1w[#14102C]"></div>
 			<div class="ae">
@@ -2640,71 +2673,71 @@ viewBox="0 0 30 30">
 			</div>
 		</section>-->
 
-	<footer class="af a2E a1J[120px]" id="footer">
+		<footer class="af a2E a1J[120px]" id="footer">
 
-		<div class="ae">
-			<div class="ag aa a1L">
-				<div class="ab ak md:a1M/2 lg:a1U/12 xl:a1U/12">
-					<div class="wow fadeInUp a2_ aH[330px] xl:a30" data-wow-delay="0s">
-						<a href="#home" class="a2a a2i">
-							<img src="images/logo/clublogo.png" alt="logo" class="ao dark:an" />
-							<img src="images/logo/clublogoblack.png" alt="logo" class="dark:ao" />
-						</a>
-						<p class="a1W a1F a1R aQ dark:aS">
-							Come, Build an iOS Ecosystem With Us
-						</p>
-						<div class="aa ac a31">
-							<a href="https://www.instagram.com/iosclub_vitb/"
-								class="aa a32 a33 ac a1t a1u a1v aQ hover:a1A hover:aT dark:a3 dark:aT dark:hover:a1A"
-								name="social-link" aria-label="social-link">
-								<svg class="a1B" width="18" height="18" viewBox="0 0 30 30">
-									<path
-										d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
-									</path>
-								</svg>
-
-								<a href="https://chat.whatsapp.com/FXI1WeGjcI99n1Fk3p70Uo"
+			<div class="ae">
+				<div class="ag aa a1L">
+					<div class="ab ak md:a1M/2 lg:a1U/12 xl:a1U/12">
+						<div class="wow fadeInUp a2_ aH[330px] xl:a30" data-wow-delay="0s">
+							<a href="#home" class="a2a a2i">
+								<img src="images/logo/clublogo.png" alt="logo" class="ao dark:an" />
+								<img src="images/logo/clublogoblack.png" alt="logo" class="dark:ao" />
+							</a>
+							<p class="a1W a1F a1R aQ dark:aS">
+								Come, Build an iOS Ecosystem With Us
+							</p>
+							<div class="aa ac a31">
+								<a href="https://www.instagram.com/iosclub_vitb/"
 									class="aa a32 a33 ac a1t a1u a1v aQ hover:a1A hover:aT dark:a3 dark:aT dark:hover:a1A"
-									name="social-link" aria-label="social-link" target="__blank">
+									name="social-link" aria-label="social-link">
 									<svg class="a1B" width="18" height="18" viewBox="0 0 30 30">
 										<path
-											d="M 15 3 C 8.373 3 3 8.373 3 15 C 3 17.251208 3.6323415 19.350068 4.7109375 21.150391 L 3.1074219 27 L 9.0820312 25.431641 C 10.829354 26.425062 12.84649 27 15 27 C 21.627 27 27 21.627 27 15 C 27 8.373 21.627 3 15 3 z M 10.892578 9.4023438 C 11.087578 9.4023438 11.287937 9.4011562 11.460938 9.4101562 C 11.674938 9.4151563 11.907859 9.4308281 12.130859 9.9238281 C 12.395859 10.509828 12.972875 11.979906 13.046875 12.128906 C 13.120875 12.277906 13.173313 12.453437 13.070312 12.648438 C 12.972312 12.848437 12.921344 12.969484 12.777344 13.146484 C 12.628344 13.318484 12.465078 13.532109 12.330078 13.662109 C 12.181078 13.811109 12.027219 13.974484 12.199219 14.271484 C 12.371219 14.568484 12.968563 15.542125 13.851562 16.328125 C 14.986562 17.342125 15.944188 17.653734 16.242188 17.802734 C 16.540187 17.951734 16.712766 17.928516 16.884766 17.728516 C 17.061766 17.533516 17.628125 16.864406 17.828125 16.566406 C 18.023125 16.268406 18.222188 16.319969 18.492188 16.417969 C 18.766188 16.515969 20.227391 17.235766 20.525391 17.384766 C 20.823391 17.533766 21.01875 17.607516 21.09375 17.728516 C 21.17075 17.853516 21.170828 18.448578 20.923828 19.142578 C 20.676828 19.835578 19.463922 20.505734 18.919922 20.552734 C 18.370922 20.603734 17.858562 20.7995 15.351562 19.8125 C 12.327563 18.6215 10.420484 15.524219 10.271484 15.324219 C 10.122484 15.129219 9.0605469 13.713906 9.0605469 12.253906 C 9.0605469 10.788906 9.8286563 10.071437 10.097656 9.7734375 C 10.371656 9.4754375 10.692578 9.4023438 10.892578 9.4023438 z">
+											d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
 										</path>
 									</svg>
-								</a>
 
-								<a href="https://www.linkedin.com/company/ios-club-vit-bhopal"
-									class="aa a32 a33 ac a1t a1u a1v aQ hover:a1A hover:aT dark:a3 dark:aT dark:hover:a1A"
-									name="social-link" aria-label="social-link">
-									<svg width="16" height="16" viewBox="0 0 16 16" class="a1B">
-										<path
-											d="M13.8333 0.5C14.2754 0.5 14.6993 0.675595 15.0118 0.988155C15.3244 1.30072 15.5 1.72464 15.5 2.16667V13.8333C15.5 14.2754 15.3244 14.6993 15.0118 15.0118C14.6993 15.3244 14.2754 15.5 13.8333 15.5H2.16667C1.72464 15.5 1.30072 15.3244 0.988155 15.0118C0.675595 14.6993 0.5 14.2754 0.5 13.8333V2.16667C0.5 1.72464 0.675595 1.30072 0.988155 0.988155C1.30072 0.675595 1.72464 0.5 2.16667 0.5H13.8333ZM13.4167 13.4167V9C13.4167 8.27949 13.1304 7.5885 12.621 7.07903C12.1115 6.56955 11.4205 6.28333 10.7 6.28333C9.99167 6.28333 9.16667 6.71667 8.76667 7.36667V6.44167H6.44167V13.4167H8.76667V9.30833C8.76667 8.66667 9.28333 8.14167 9.925 8.14167C10.2344 8.14167 10.5312 8.26458 10.75 8.48338C10.9688 8.70217 11.0917 8.99891 11.0917 9.30833V13.4167H13.4167ZM3.73333 5.13333C4.10464 5.13333 4.46073 4.98583 4.72328 4.72328C4.98583 4.46073 5.13333 4.10464 5.13333 3.73333C5.13333 2.95833 4.50833 2.325 3.73333 2.325C3.35982 2.325 3.0016 2.47338 2.73749 2.73749C2.47338 3.0016 2.325 3.35982 2.325 3.73333C2.325 4.50833 2.95833 5.13333 3.73333 5.13333ZM4.89167 13.4167V6.44167H2.58333V13.4167H4.89167Z" />
-									</svg>
-								</a>
-								<a href="https://www.youtube.com/channel/UCqUYjA1pjpdrDFJDzTb45PA"
-									class="aa a32 a33 ac a1t a1u a1v aQ hover:a1A hover:aT dark:a3 dark:aT dark:hover:a1A"
-									name="social-link" aria-label="social-link">
-									<svg width="18" height="12" viewBox="0 0 18 12" class="a1B">
-										<path
-											d="M7.33366 8.49984L11.6587 5.99984L7.33366 3.49984V8.49984ZM16.967 1.97484C17.0753 2.3665 17.1503 2.8915 17.2003 3.55817C17.2587 4.22484 17.2837 4.79984 17.2837 5.29984L17.3337 5.99984C17.3337 7.82484 17.2003 9.1665 16.967 10.0248C16.7587 10.7748 16.2753 11.2582 15.5253 11.4665C15.1337 11.5748 14.417 11.6498 13.317 11.6998C12.2337 11.7582 11.242 11.7832 10.3253 11.7832L9.00033 11.8332C5.50866 11.8332 3.33366 11.6998 2.47533 11.4665C1.72533 11.2582 1.24199 10.7748 1.03366 10.0248C0.925326 9.63317 0.850326 9.10817 0.800326 8.44151C0.741992 7.77484 0.716992 7.19984 0.716992 6.69984L0.666992 5.99984C0.666992 4.17484 0.800326 2.83317 1.03366 1.97484C1.24199 1.22484 1.72533 0.741504 2.47533 0.533171C2.86699 0.424837 3.58366 0.349837 4.68366 0.299837C5.76699 0.241504 6.75866 0.216504 7.67533 0.216504L9.00033 0.166504C12.492 0.166504 14.667 0.299837 15.5253 0.533171C16.2753 0.741504 16.7587 1.22484 16.967 1.97484Z" />
-									</svg>
-								</a>
+									<a href="https://chat.whatsapp.com/FXI1WeGjcI99n1Fk3p70Uo"
+										class="aa a32 a33 ac a1t a1u a1v aQ hover:a1A hover:aT dark:a3 dark:aT dark:hover:a1A"
+										name="social-link" aria-label="social-link" target="__blank">
+										<svg class="a1B" width="18" height="18" viewBox="0 0 30 30">
+											<path
+												d="M 15 3 C 8.373 3 3 8.373 3 15 C 3 17.251208 3.6323415 19.350068 4.7109375 21.150391 L 3.1074219 27 L 9.0820312 25.431641 C 10.829354 26.425062 12.84649 27 15 27 C 21.627 27 27 21.627 27 15 C 27 8.373 21.627 3 15 3 z M 10.892578 9.4023438 C 11.087578 9.4023438 11.287937 9.4011562 11.460938 9.4101562 C 11.674938 9.4151563 11.907859 9.4308281 12.130859 9.9238281 C 12.395859 10.509828 12.972875 11.979906 13.046875 12.128906 C 13.120875 12.277906 13.173313 12.453437 13.070312 12.648438 C 12.972312 12.848437 12.921344 12.969484 12.777344 13.146484 C 12.628344 13.318484 12.465078 13.532109 12.330078 13.662109 C 12.181078 13.811109 12.027219 13.974484 12.199219 14.271484 C 12.371219 14.568484 12.968563 15.542125 13.851562 16.328125 C 14.986562 17.342125 15.944188 17.653734 16.242188 17.802734 C 16.540187 17.951734 16.712766 17.928516 16.884766 17.728516 C 17.061766 17.533516 17.628125 16.864406 17.828125 16.566406 C 18.023125 16.268406 18.222188 16.319969 18.492188 16.417969 C 18.766188 16.515969 20.227391 17.235766 20.525391 17.384766 C 20.823391 17.533766 21.01875 17.607516 21.09375 17.728516 C 21.17075 17.853516 21.170828 18.448578 20.923828 19.142578 C 20.676828 19.835578 19.463922 20.505734 18.919922 20.552734 C 18.370922 20.603734 17.858562 20.7995 15.351562 19.8125 C 12.327563 18.6215 10.420484 15.524219 10.271484 15.324219 C 10.122484 15.129219 9.0605469 13.713906 9.0605469 12.253906 C 9.0605469 10.788906 9.8286563 10.071437 10.097656 9.7734375 C 10.371656 9.4754375 10.692578 9.4023438 10.892578 9.4023438 z">
+											</path>
+										</svg>
+									</a>
+
+									<a href="https://www.linkedin.com/company/ios-club-vit-bhopal"
+										class="aa a32 a33 ac a1t a1u a1v aQ hover:a1A hover:aT dark:a3 dark:aT dark:hover:a1A"
+										name="social-link" aria-label="social-link">
+										<svg width="16" height="16" viewBox="0 0 16 16" class="a1B">
+											<path
+												d="M13.8333 0.5C14.2754 0.5 14.6993 0.675595 15.0118 0.988155C15.3244 1.30072 15.5 1.72464 15.5 2.16667V13.8333C15.5 14.2754 15.3244 14.6993 15.0118 15.0118C14.6993 15.3244 14.2754 15.5 13.8333 15.5H2.16667C1.72464 15.5 1.30072 15.3244 0.988155 15.0118C0.675595 14.6993 0.5 14.2754 0.5 13.8333V2.16667C0.5 1.72464 0.675595 1.30072 0.988155 0.988155C1.30072 0.675595 1.72464 0.5 2.16667 0.5H13.8333ZM13.4167 13.4167V9C13.4167 8.27949 13.1304 7.5885 12.621 7.07903C12.1115 6.56955 11.4205 6.28333 10.7 6.28333C9.99167 6.28333 9.16667 6.71667 8.76667 7.36667V6.44167H6.44167V13.4167H8.76667V9.30833C8.76667 8.66667 9.28333 8.14167 9.925 8.14167C10.2344 8.14167 10.5312 8.26458 10.75 8.48338C10.9688 8.70217 11.0917 8.99891 11.0917 9.30833V13.4167H13.4167ZM3.73333 5.13333C4.10464 5.13333 4.46073 4.98583 4.72328 4.72328C4.98583 4.46073 5.13333 4.10464 5.13333 3.73333C5.13333 2.95833 4.50833 2.325 3.73333 2.325C3.35982 2.325 3.0016 2.47338 2.73749 2.73749C2.47338 3.0016 2.325 3.35982 2.325 3.73333C2.325 4.50833 2.95833 5.13333 3.73333 5.13333ZM4.89167 13.4167V6.44167H2.58333V13.4167H4.89167Z" />
+										</svg>
+									</a>
+									<a href="https://www.youtube.com/channel/UCqUYjA1pjpdrDFJDzTb45PA"
+										class="aa a32 a33 ac a1t a1u a1v aQ hover:a1A hover:aT dark:a3 dark:aT dark:hover:a1A"
+										name="social-link" aria-label="social-link">
+										<svg width="18" height="12" viewBox="0 0 18 12" class="a1B">
+											<path
+												d="M7.33366 8.49984L11.6587 5.99984L7.33366 3.49984V8.49984ZM16.967 1.97484C17.0753 2.3665 17.1503 2.8915 17.2003 3.55817C17.2587 4.22484 17.2837 4.79984 17.2837 5.29984L17.3337 5.99984C17.3337 7.82484 17.2003 9.1665 16.967 10.0248C16.7587 10.7748 16.2753 11.2582 15.5253 11.4665C15.1337 11.5748 14.417 11.6498 13.317 11.6998C12.2337 11.7582 11.242 11.7832 10.3253 11.7832L9.00033 11.8332C5.50866 11.8332 3.33366 11.6998 2.47533 11.4665C1.72533 11.2582 1.24199 10.7748 1.03366 10.0248C0.925326 9.63317 0.850326 9.10817 0.800326 8.44151C0.741992 7.77484 0.716992 7.19984 0.716992 6.69984L0.666992 5.99984C0.666992 4.17484 0.800326 2.83317 1.03366 1.97484C1.24199 1.22484 1.72533 0.741504 2.47533 0.533171C2.86699 0.424837 3.58366 0.349837 4.68366 0.299837C5.76699 0.241504 6.75866 0.216504 7.67533 0.216504L9.00033 0.166504C12.492 0.166504 14.667 0.299837 15.5253 0.533171C16.2753 0.741504 16.7587 1.22484 16.967 1.97484Z" />
+										</svg>
+									</a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="ab ak sm:a1M/2 md:a1M/2 lg:a1U/12 xl:a12/12">
-					<div class="wow fadeInUp a2_ xl:a30" data-wow-delay="0s">
-						<h2 class="a2K a2B a1P a1k dark:aT">Quick Links</h2>
-						<div class="a34">
-							<a href="#home" class="an a1F a1R aQ hover:aR dark:aS dark:hover:aR">
-								Home
-							</a>
-							<a href="#roadmap" class="an a1F a1R aQ hover:aR dark:aS dark:hover:aR">
-								Roadmap</a>
+					<div class="ab ak sm:a1M/2 md:a1M/2 lg:a1U/12 xl:a12/12">
+						<div class="wow fadeInUp a2_ xl:a30" data-wow-delay="0s">
+							<h2 class="a2K a2B a1P a1k dark:aT">Quick Links</h2>
+							<div class="a34">
+								<a href="#home" class="an a1F a1R aQ hover:aR dark:aS dark:hover:aR">
+									Home
+								</a>
+								<a href="#roadmap" class="an a1F a1R aQ hover:aR dark:aS dark:hover:aR">
+									Roadmap</a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<!--
+					<!--
 				<div class="ab ak sm:a1M/2 md:a1M/2 lg:a1U/12 xl:a12/12">
 					<div class="wow fadeInUp a2_ xl:a30" data-wow-delay="0s">
 						<h2 class="a2K a2B a1P a1k dark:aT">Supports</h2>
@@ -2729,30 +2762,19 @@ viewBox="0 0 30 30">
 							<div class="a34">
 								<div class="aa">
 									<div class="a20 aC[75px] ab aH[75px] a1X">
-										<img
-											src="images/logo/gameflixlogo.webp"
-											alt="post"
-											class="a2w ab a1X a2x a2y"
-										/>
+										<img src="images/logo/gameflixlogo.webp" alt="post"
+											class="a2w ab a1X a2x a2y" />
 									</div>
 									<div>
-										<a
-										href="https://docs.google.com/forms/d/e/1FAIpQLSc0GXzQNSImCr3wB7kzbht0o_r3iRTDzA7_DfcoO_nC_gmkRQ/viewform" target="_blank"
-										class="a1F a1R aQ hover:aR dark:aS dark:hover:aR"
-										>
+										<a href="https://docs.google.com/forms/d/e/1FAIpQLSc0GXzQNSImCr3wB7kzbht0o_r3iRTDzA7_DfcoO_nC_gmkRQ/viewform"
+											target="_blank" class="a1F a1R aQ hover:aR dark:aS dark:hover:aR">
 											GameFlix Seats Filling Faster Than Any Other Event. Reserve Yours Now
 										</a>
 										<p class="aa ac" style="padding-top: 3px;">
 											<span class="a35 aQ dark:aS">
-												<svg
-													width="14"
-													height="16"
-													viewBox="0 0 14 16"
-													class="a1B"
-												>
+												<svg width="14" height="16" viewBox="0 0 14 16" class="a1B">
 													<path
-														d="M3.25 8H4.75V9.5H3.25V8ZM13.75 3.5V14C13.75 14.3978 13.592 14.7794 13.3107 15.0607C13.0294 15.342 12.6478 15.5 12.25 15.5H1.75C0.9175 15.5 0.25 14.825 0.25 14V3.5C0.25 3.10218 0.408035 2.72064 0.68934 2.43934C0.970644 2.15804 1.35218 2 1.75 2H2.5V0.5H4V2H10V0.5H11.5V2H12.25C12.6478 2 13.0294 2.15804 13.3107 2.43934C13.592 2.72064 13.75 3.10218 13.75 3.5ZM1.75 5H12.25V3.5H1.75V5ZM12.25 14V6.5H1.75V14H12.25ZM9.25 9.5V8H10.75V9.5H9.25ZM6.25 9.5V8H7.75V9.5H6.25ZM3.25 11H4.75V12.5H3.25V11ZM9.25 12.5V11H10.75V12.5H9.25ZM6.25 12.5V11H7.75V12.5H6.25Z"
-													/>
+														d="M3.25 8H4.75V9.5H3.25V8ZM13.75 3.5V14C13.75 14.3978 13.592 14.7794 13.3107 15.0607C13.0294 15.342 12.6478 15.5 12.25 15.5H1.75C0.9175 15.5 0.25 14.825 0.25 14V3.5C0.25 3.10218 0.408035 2.72064 0.68934 2.43934C0.970644 2.15804 1.35218 2 1.75 2H2.5V0.5H4V2H10V0.5H11.5V2H12.25C12.6478 2 13.0294 2.15804 13.3107 2.43934C13.592 2.72064 13.75 3.10218 13.75 3.5ZM1.75 5H12.25V3.5H1.75V5ZM12.25 14V6.5H1.75V14H12.25ZM9.25 9.5V8H10.75V9.5H9.25ZM6.25 9.5V8H7.75V9.5H6.25ZM3.25 11H4.75V12.5H3.25V11ZM9.25 12.5V11H10.75V12.5H9.25ZM6.25 12.5V11H7.75V12.5H6.25Z" />
 												</svg>
 											</span>
 											<span class="a1j a1R aQ dark:aS"> Jan 29, 2023 </span>
@@ -2761,30 +2783,18 @@ viewBox="0 0 30 30">
 								</div>
 								<div class="aa">
 									<div class="a20 aC[75px] ab aH[75px] a1X">
-										<img
-											src="images/logo/sampurnalogo.webp"
-											alt="post"
-											class="a2w ab a1X a2x a2y"
-										/>
+										<img src="images/logo/sampurnalogo.webp" alt="post"
+											class="a2w ab a1X a2x a2y" />
 									</div>
 									<div>
-										<a
-											
-											class="a1F a1R aQ hover:aR dark:aS dark:hover:aR"
-										>
+										<a class="a1F a1R aQ hover:aR dark:aS dark:hover:aR">
 											Sampurna to KickStart on 30<sup>th</sup> Jan, Are You Ready ?
-									</a>
-										<p class="aa ac"  style="padding-top: 3px;">
+										</a>
+										<p class="aa ac" style="padding-top: 3px;">
 											<span class="a35 aQ dark:aS">
-												<svg
-													width="14"
-													height="16"
-													viewBox="0 0 14 16"
-													class="a1B"
-												>
+												<svg width="14" height="16" viewBox="0 0 14 16" class="a1B">
 													<path
-														d="M3.25 8H4.75V9.5H3.25V8ZM13.75 3.5V14C13.75 14.3978 13.592 14.7794 13.3107 15.0607C13.0294 15.342 12.6478 15.5 12.25 15.5H1.75C0.9175 15.5 0.25 14.825 0.25 14V3.5C0.25 3.10218 0.408035 2.72064 0.68934 2.43934C0.970644 2.15804 1.35218 2 1.75 2H2.5V0.5H4V2H10V0.5H11.5V2H12.25C12.6478 2 13.0294 2.15804 13.3107 2.43934C13.592 2.72064 13.75 3.10218 13.75 3.5ZM1.75 5H12.25V3.5H1.75V5ZM12.25 14V6.5H1.75V14H12.25ZM9.25 9.5V8H10.75V9.5H9.25ZM6.25 9.5V8H7.75V9.5H6.25ZM3.25 11H4.75V12.5H3.25V11ZM9.25 12.5V11H10.75V12.5H9.25ZM6.25 12.5V11H7.75V12.5H6.25Z"
-													/>
+														d="M3.25 8H4.75V9.5H3.25V8ZM13.75 3.5V14C13.75 14.3978 13.592 14.7794 13.3107 15.0607C13.0294 15.342 12.6478 15.5 12.25 15.5H1.75C0.9175 15.5 0.25 14.825 0.25 14V3.5C0.25 3.10218 0.408035 2.72064 0.68934 2.43934C0.970644 2.15804 1.35218 2 1.75 2H2.5V0.5H4V2H10V0.5H11.5V2H12.25C12.6478 2 13.0294 2.15804 13.3107 2.43934C13.592 2.72064 13.75 3.10218 13.75 3.5ZM1.75 5H12.25V3.5H1.75V5ZM12.25 14V6.5H1.75V14H12.25ZM9.25 9.5V8H10.75V9.5H9.25ZM6.25 9.5V8H7.75V9.5H6.25ZM3.25 11H4.75V12.5H3.25V11ZM9.25 12.5V11H10.75V12.5H9.25ZM6.25 12.5V11H7.75V12.5H6.25Z" />
 												</svg>
 											</span>
 											<span class="a1j a1R aQ dark:aS"> Jan 21, 2023 </span>
@@ -2794,171 +2804,171 @@ viewBox="0 0 30 30">
 							</div>
 						</div>
 					</div>-->
+				</div>
+				<div class="wow fadeInUp a36 a2l[#F3F4F4] a37 a2G dark:a2l[#2D2C4A]" data-wow-delay="0s">
+					<p class="a1F a1R a4u aQ dark:aS">
+						© iOS Club | VIT Bhopal | 2023
+					</p>
+				</div>
 			</div>
-			<div class="wow fadeInUp a36 a2l[#F3F4F4] a37 a2G dark:a2l[#2D2C4A]" data-wow-delay="0s">
-				<p class="a1F a1R a4u aQ dark:aS">
-					© iOS Club | VIT Bhopal | 2023
-				</p>
+			<div class="aq a8 a1a a2Z">
+				<img src="images/shapes/footer-shape-2.svg" alt="shape" />
 			</div>
-		</div>
-		<div class="aq a8 a1a a2Z">
-			<img src="images/shapes/footer-shape-2.svg" alt="shape" />
-		</div>
-		<div class="aq a2J a19 a2Z">
-			<img src="images/shapes/footer-shape-1.svg" alt="shape" />
-		</div>
-	</footer>
+			<div class="aq a2J a19 a2Z">
+				<img src="images/shapes/footer-shape-1.svg" alt="shape" />
+			</div>
+		</footer>
 
-	<a x-show="scrolledFromTop" href="#home" name="scrollToTop" aria-label="scrollToTop"
-		class="hover:a38 back-to-top ad a39 a3a a3b a2I[999] aa a32 a33 ac a1t au a1A aT a3c a3d">
-		<span class="a10[6px] a3e a3f az a36 a3g a1I"></span>
-	</a>
-	<script src="js/apexcharts.min.js"></script>
-	<script src="js/main.js"></script>
-	<script>
-		// ==== for menu scroll
-		const pageLink = document.querySelectorAll(".scroll-menu");
+		<a x-show="scrolledFromTop" href="#home" name="scrollToTop" aria-label="scrollToTop"
+			class="hover:a38 back-to-top ad a39 a3a a3b a2I[999] aa a32 a33 ac a1t au a1A aT a3c a3d">
+			<span class="a10[6px] a3e a3f az a36 a3g a1I"></span>
+		</a>
+		<script src="js/apexcharts.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			// ==== for menu scroll
+			const pageLink = document.querySelectorAll(".scroll-menu");
 
-		pageLink.forEach((elem) => {
-			elem.addEventListener("click", (e) => {
-				e.preventDefault();
-				document.querySelector(elem.getAttribute("href")).scrollIntoView({
-					behavior: "smooth",
-					offsetTop: 1 - 60,
+			pageLink.forEach((elem) => {
+				elem.addEventListener("click", (e) => {
+					e.preventDefault();
+					document.querySelector(elem.getAttribute("href")).scrollIntoView({
+						behavior: "smooth",
+						offsetTop: 1 - 60,
+					});
 				});
 			});
-		});
 
-		// section menu active
-		function onScroll(event) {
-			const sections = document.querySelectorAll(".scroll-menu");
-			const scrollPos =
-				window.pageYOffset ||
-				document.documentElement.scrollTop ||
-				document.body.scrollTop;
+			// section menu active
+			function onScroll(event) {
+				const sections = document.querySelectorAll(".scroll-menu");
+				const scrollPos =
+					window.pageYOffset ||
+					document.documentElement.scrollTop ||
+					document.body.scrollTop;
 
-			for (let i = 0; i < sections.length; i++) {
-				const currLink = sections[i];
-				const val = currLink.getAttribute("href");
-				const refElement = document.querySelector(val);
-				const scrollTopMinus = scrollPos + 73;
-				if (
-					refElement.offsetTop <= scrollTopMinus &&
-					refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
-				) {
-					document
-						.querySelector(".scroll-menu")
-						.classList.remove("dark:aT", "aR");
-					currLink.classList.add("dark:aT", "aR");
-				} else {
-					currLink.classList.remove("dark:aT", "aR");
+				for (let i = 0; i < sections.length; i++) {
+					const currLink = sections[i];
+					const val = currLink.getAttribute("href");
+					const refElement = document.querySelector(val);
+					const scrollTopMinus = scrollPos + 73;
+					if (
+						refElement.offsetTop <= scrollTopMinus &&
+						refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+					) {
+						document
+							.querySelector(".scroll-menu")
+							.classList.remove("dark:aT", "aR");
+						currLink.classList.add("dark:aT", "aR");
+					} else {
+						currLink.classList.remove("dark:aT", "aR");
+					}
 				}
 			}
-		}
 
-		window.document.addEventListener("scroll", onScroll);
+			window.document.addEventListener("scroll", onScroll);
 
-		// ====
-		var options = {
-			series: [5, 6, 5, 10, 5, 4, 4, 7, 8, 4],
-			labels: ["Content", "Technical", "Developer", "Event", "Design", "Video Editing", "Photo and Video", "PR",
-				"Social and Marketing", "Anchoring"
-			],
-			chart: {
-				type: "donut",
-				width: 550,
-			},
-			colors: ["#2347B9", "#3363FF", "#8BA6FF", "#8696CA", "#8093F1", "#2589BD", "#3E92EC", "#2B9AA3", "#99E6FF",
-				"#907ADD"
-			],
-			legend: {
-				show: false,
-			},
-			stroke: {
-				show: false,
-			},
-			responsive: [{
-				breakpoint: 480,
-				options: {
-					chart: {
-						width: 200,
-					},
-					legend: {
-						position: "bottom",
-					},
+			// ====
+			var options = {
+				series: [5, 6, 5, 10, 5, 4, 4, 7, 8, 4],
+				labels: ["Content", "Technical", "Developer", "Event", "Design", "Video Editing", "Photo and Video", "PR",
+					"Social and Marketing", "Anchoring"
+				],
+				chart: {
+					type: "donut",
+					width: 550,
 				},
-			}, ],
-		};
+				colors: ["#2347B9", "#3363FF", "#8BA6FF", "#8696CA", "#8093F1", "#2589BD", "#3E92EC", "#2B9AA3", "#99E6FF",
+					"#907ADD"
+				],
+				legend: {
+					show: false,
+				},
+				stroke: {
+					show: false,
+				},
+				responsive: [{
+					breakpoint: 480,
+					options: {
+						chart: {
+							width: 200,
+						},
+						legend: {
+							position: "bottom",
+						},
+					},
+				}, ],
+			};
 
-		var chart = new ApexCharts(document.querySelector("#chart"), options);
-		chart.render();
-	</script>
-	<style>
-		#container {
-			width: 100%;
-			height: 100%;
-			position: fixed;
-			top: 0;
-			left: 0;
-			z-index: 100;
-			display: none;
-			background-color: #808080;
-			filter: alpha(opacity=70);
-			-moz-opacity: 0.7;
-			-khtml-opacity: 0.7;
-			opacity: 0.7;
-		}
+			var chart = new ApexCharts(document.querySelector("#chart"), options);
+			chart.render();
+		</script>
+		<style>
+			#container {
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				top: 0;
+				left: 0;
+				z-index: 100;
+				display: none;
+				background-color: #808080;
+				filter: alpha(opacity=70);
+				-moz-opacity: 0.7;
+				-khtml-opacity: 0.7;
+				opacity: 0.7;
+			}
 
-		.window a {
-			text-decoration: none;
-		}
+			.window a {
+				text-decoration: none;
+			}
 
-		.popupbox {
-			width: 100%;
-			margin: 0 auto;
-			display: none;
-			position: fixed;
-			z-index: 101;
-		}
+			.popupbox {
+				width: 100%;
+				margin: 0 auto;
+				display: none;
+				position: fixed;
+				z-index: 101;
+			}
 
-		.window {
-			width: 360px;
-			height: 266px;
-			min-width: 362px;
-			min-height: 95px;
-			margin: 80px auto;
-			padding: 1px;
-			background: #e6e6e6;
-			position: relative;
-			z-index: 103;
-			border-radius: 5px;
-			box-shadow: 0 2px 5px #000;
-		}
+			.window {
+				width: 360px;
+				height: 266px;
+				min-width: 362px;
+				min-height: 95px;
+				margin: 80px auto;
+				padding: 1px;
+				background: #e6e6e6;
+				position: relative;
+				z-index: 103;
+				border-radius: 5px;
+				box-shadow: 0 2px 5px #000;
+			}
 
-		.window p {
-			color: #555555;
-			clear: both;
-			text-align: justify;
-		}
+			.window p {
+				color: #555555;
+				clear: both;
+				text-align: justify;
+			}
 
-		.window p a {
-			color: #d91900;
-			font-weight: bold;
-		}
+			.window p a {
+				color: #d91900;
+				font-weight: bold;
+			}
 
-		.window .close {
-			width: 34px;
-			height: 35px;
-			top: -25px;
-			left: 22px;
-			float: right;
-			position: relative;
-		}
+			.window .close {
+				width: 34px;
+				height: 35px;
+				top: -25px;
+				left: 22px;
+				float: right;
+				position: relative;
+			}
 
-		.window .close:hover {
-			cursor: pointer;
-		}
-	</style>
+			.window .close:hover {
+				cursor: pointer;
+			}
+		</style>
 </body>
 
 </html>
