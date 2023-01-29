@@ -201,7 +201,7 @@ textarea {
 .event_register_button{
   color: white;
   font-size: 1.2rem;
-  background-color: rgb(20 20 20 / var(--tw-bg-opacity));
+  background-color: rgb(19 27 95 / var(--tw-bg-opacity));
   border-radius: 50px;
   font-weight: 500;
   padding-left: 20px;
@@ -2064,11 +2064,10 @@ input#checkboxLabel:checked ~ .box span{
   border-color: rgb(54 61 104 / var(--tw-border-opacity));
 }
 
+
 .a0 .dark\:a2l\[\#2D2C4A\]{
   --tw-border-opacity: 1;
-  border-bottom: 2.25px solid ;
-  border-top: 2.25px solid;
-  border-color: rgb(20 20 20 / var(--tw-border-opacity));
+  border-color: rgb(45 44 74 / var(--tw-border-opacity));
 }
 
 .a0 .dark\:a27{
@@ -2090,14 +2089,13 @@ input#checkboxLabel:checked ~ .box span{
 
 .a0 .dark\:a2{
   --tw-bg-opacity: 1;
-  background-color: rgb(30 30 30 / var(--tw-bg-opacity));
+  background-color: rgb(8 3 33 / var(--tw-bg-opacity));
 }
 
 .a0 .dark\:a3{
   --tw-bg-opacity: 1;
-  background-color: rgb(22 22 22 /  var(--tw-bg-opacity));
+  background-color: rgb(19 27 77 / var(--tw-bg-opacity));
 }
-
 .a0 .dark\:a7{
   background-color: transparent;
 }
@@ -2109,7 +2107,7 @@ input#checkboxLabel:checked ~ .box span{
 
 .a0 .dark\:a1w\[\#1E2763\]{
   --tw-bg-opacity: 1;
-  background-color: rgb(15 15 15 / var(--tw-bg-opacity));
+  background-color: rgb(30 39 99 / var(--tw-bg-opacity));
 }
 
 .a0 .dark\:a1A{
@@ -2122,11 +2120,11 @@ input#checkboxLabel:checked ~ .box span{
   background-color: rgb(39 46 92 / var(--tw-bg-opacity));
 }
 
+
 .a0 .dark\:a1w\[\#14102C\]{
   --tw-bg-opacity: 1;
-  background-color: rgb(22 22 22 / var(--tw-bg-opacity));
+  background-color: rgb(20 16 44 / var(--tw-bg-opacity));
 }
-
 .a0 .dark\:a1w\[\#2D2C4A\]{
   --tw-bg-opacity: 1;
   background-color: rgb(45 44 74 / var(--tw-bg-opacity));
