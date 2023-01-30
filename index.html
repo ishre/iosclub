@@ -1989,14 +1989,13 @@
 							function SubmitContactForm() {
 								var data = new FormData(form);
 								var SubmitButton = document.getElementById("SubmitContactButton");
-								SubmitButton.innerHTML = "Submitting Form";
+								SubmitButton.innerHTML = "Sending Message";
 								SubmitButton.style.backgroundColor = "#3e7dff"
 								SubmitButton.style.color = "white";
 								SubmitButton.onclick = "javascript:void()";
 							  fetch(scriptURL, { method: 'POST', body: data})
 								.then(response => CloseContactForm())
-								.catch(error => alert("There Was Some Error Submitting the Form"))
-
+								.catch(error => {alert("There was some error sending the message, Try again."); OnSubmittionError(); })
 							}
 							function CloseContactForm(){
 								var FORM = document.getElementById("CONTACTFORM");
@@ -2004,8 +2003,13 @@
 								var Heading = document.getElementById("FORMTITLE");;
 								Heading.innerHTML = "Thanks For Submitting";
 								Heading.style.justifyContent="center";
-								
-
+							}
+							function OnSubmittionError(){
+								var SubmitButton = document.getElementById("SubmitContactButton");
+								SubmitButton.innerHTML = "Send Message";
+								SubmitButton.style.backgroundColor = "white"
+								SubmitButton.style.color = "black";
+								SubmitButton.onclick = function () {validateForm()};
 							}
 						  </script>
 					</div>
