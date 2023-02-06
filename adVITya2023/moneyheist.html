@@ -287,7 +287,7 @@
         </div>
         </div>
 
-        <center style="padding-top: 25px;">
+        <center href="#home" style="padding-top: 25px;">
             <form name="adVITyaAnswer" action="javascript:void(0)">
                 <div class="ab ak lg:a4x/12" style="width:75%">
                     <label for="teamname" class="a2s an a1j a1R a2u dark:aT"
@@ -298,7 +298,7 @@
                     <input type="text" name="teamname" placeholder="Enter Name"
                         class="ab a1X a1C a2l[#E9E9E9] a4z a22 a23 a1F a1R aS a24 focus:a1H dark:a4A dark:a1 dark:a4B"
                         required />
-                        <input type="text" step="3" name="submissionTime" style="display: none;">
+                    <input type="text" step="3" name="submissionTime" style="display: none;">
                     <br><br><br>
                     <label for="name" class="a2s an a1j a1R a2u dark:aT"
                         style="display: flex; align-items:flex-start; font-size: 1.2rem;">
@@ -310,27 +310,17 @@
 
                     </div>
                     <script>
-                        var lock = new Lock({
-                            id: 'mylock',
-                            code: 'JD1RTWo0M05qNFhO',
-                            timeout: 150,
-                            encoded: true,
-                            diameter: 100,
-                            onChange: () => {
-                                checkData();
-                            },
-                            onOpen: () => {
-                                SendTeamData();
-                                alert("Congratulations");
-                            }
-                        });
+
                     </script>
                     <!-- Scroll Lock System End-->
-                    <div name="MessageText" style="padding-top: 25px; font-weight: 700; font-size: 1.1em;" class="dark:aT">
-                        After You Enter Correct Code, Your Answer Will Be Submitted Automatically
-                    </div>
                 </div>
+                <button class="ab a1u a1A a4C a2G a1F aP aT hover:a2X dark:a1 dark:a1k dark:hover:a2X"
+                    style="width:60%; margin-top: 25px;" onclick="ButtonClickFunction()"
+                    name="SubmitButton">Check</button>
             </form>
+            <div name="MessageText" style="padding-top: 25px; font-weight: 700; font-size: 1.1em; width: 75%;"
+                class="dark:aT">
+                Press Check To Check if Your Solution is Correct or Not and Sumbit Your Answer. </div>
         </center>
     </section>
     <footer class="af a2E a1J[120px]" id="footer">
@@ -391,10 +381,7 @@
                         <div class="a34">
                             <a href="#home" class="an a1F a1R aQ hover:aR dark:aS dark:hover:aR">
                                 Home
-                            </a>
-                            <a href="#roadmap" class="an a1F a1R aQ hover:aR dark:aS dark:hover:aR">
-                                Roadmap</a>
-                        </div>
+                            </a></div>
                     </div>
                 </div>
                 <!--
@@ -416,11 +403,6 @@
 					</div>
 				</div>
 			-->
-                <div class="ab ak md:a1M/2 lg:a1M/2 xl:a1U/12">
-                    <div class="wow fadeInUp a2_ xl:a30" data-wow-delay="0s">
-                        <h2 class="a2K a2B a1P a1k dark:aT">News & Posts</h2>
-                    </div>
-                </div>
             </div>
             <div class="wow fadeInUp a36 a2l[#F3F4F4] a37 a2G dark:a2l[#2D2C4A]" data-wow-delay="0s">
                 <p class="a1F a1R a4u aQ dark:aS">
@@ -441,6 +423,24 @@
         <span class="a10[6px] a3e a3f az a36 a3g a1I"></span>
     </a>
     <script>
+        var Button = document.getElementsByName("SubmitButton")[0];
+        var infoText = document.getElementsByName("MessageText")[0]
+        var lock = new Lock({
+            id: 'mylock',
+            code: 'JD1RTWo0M05qNFhO',
+            timeout: 150,
+            encoded: true,
+            diameter: 100,
+            onChange: () => {
+                checkData();
+               if (infoText.innerHTML == "Wrong Answer") {
+                infoText.innerHTML = "";}
+            },
+            onOpen: () => {
+
+            }
+        });
+
         function checkData() {
             var Name = document.forms['adVITyaAnswer']["teamname"].value;
             if (Name == "") {
@@ -448,16 +448,33 @@
                 lock.setCode('000');
             }
         }
-        var scriptURL = "https://script.google.com/macros/s/AKfycbw3MAnIlpBRGB0GnUyzSW18MysalLaMtCS8Y0OIV8qceXP3HaZaMZkknbmafmuD5Z4I/exec";
+
+        function ButtonClickFunction() {
+            if (Lock.decode("JD1RTWo0M05qNFhO").join("")=== lock.getCode().join("")) {
+                SendTeamData();
+                alert("Congratulations");
+               infoText.innerHTML = "Submitting";
+               infoText.style.fontSize = "1.5rem";
+               infoText.style.color = "#e7ff00";
+
+            } else {
+                infoText.innerHTML = "Wrong Answer";
+                infoText.style.fontSize = "1.3rem";
+                infoText.style.color = "#ff0032";
+
+            }
+        }
+        var scriptURL =
+            "https://script.google.com/macros/s/AKfycbw3MAnIlpBRGB0GnUyzSW18MysalLaMtCS8Y0OIV8qceXP3HaZaMZkknbmafmuD5Z4I/exec";
+
         function SendTeamData() {
             var form = document.forms['adVITyaAnswer'];
+            var formElement = document.getElementsByName("adVITyaAnswer")[0];
+            formElement.style.display = "none";
             var date = new Date();
             var data = new FormData(form);
-
             data.delete("submissionTime");
-            data.append("submissionTime",date.toLocaleTimeString());
-            console.log(data.getAll ("submissionTime"));
-            
+            data.append("submissionTime", date.toLocaleTimeString());
             fetch(scriptURL, {
                     method: 'POST',
                     body: data
@@ -465,11 +482,17 @@
                 .then(response => CloseTask())
                 .catch(error => {
                     alert("There was some error sending the message, Try again.");
-                    
+                    formElement.style.display = "block";
+                    infoText.innerHTML = "Try Submitting Again"
+                infoText.style.fontSize = "1.3rem";
+                infoText.style.color = "red";
+
                 });
-                function CloseTask(){
-                    document.getElementsByName("MessageText")[0].innerHTML = "Congratulations";
-                }
+
+            function CloseTask() {
+                infoText.innerHTML = "Congratulations";
+                infoText.style.color = "#25ff00";
+            }
         }
     </script>
     <script src="../js/main.js"></script>
